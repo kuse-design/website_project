@@ -103,6 +103,12 @@ body {
   margin: 0 auto;
 }
 
+.calculator-container{
+  max-width: 2000px;
+  padding: 0px 15px;
+  margin: 0;
+}
+
 .container-fluid{
   padding: 0px;
 }

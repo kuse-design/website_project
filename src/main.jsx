@@ -13,3 +13,6 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </React.StrictMode>
 )
+
+import './test-build.js'
+import { TEST_VALUE } from './test-import.js'; console.log(TEST_VALUE);

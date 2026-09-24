@@ -1,0 +1,93 @@
+$flaticon_kaizenbank-font: "flaticon_kaizenbank";
+
+@font-face {
+    font-family: $flaticon_kaizenbank-font;
+    src: url("./flaticon_kaizenbank.woff2?8e956bd10ab82df756eccf21dfd64b3a") format("woff2"),
+url("./flaticon_kaizenbank.woff?8e956bd10ab82df756eccf21dfd64b3a") format("woff"),
+url("./flaticon_kaizenbank.eot?8e956bd10ab82df756eccf21dfd64b3a#iefix") format("embedded-opentype"),
+url("./flaticon_kaizenbank.ttf?8e956bd10ab82df756eccf21dfd64b3a") format("truetype"),
+url("./flaticon_kaizenbank.svg?8e956bd10ab82df756eccf21dfd64b3a#flaticon_kaizenbank") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_kaizenbank !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_kaizenbank-map: (
+    "down-arrow": "\f101",
+    "next": "\f102",
+    "right-arrow": "\f103",
+    "down-arrow-1": "\f104",
+    "sparkle": "\f105",
+    "play-store": "\f106",
+    "apple": "\f107",
+    "chart-up": "\f108",
+    "chevron": "\f109",
+    "facebook": "\f10a",
+    "twitter": "\f10b",
+    "instagram-logo": "\f10c",
+    "youtube": "\f10d",
+    "vimeo": "\f10e",
+    "mobile-data": "\f10f",
+    "right-arrow-1": "\f110",
+    "star": "\f111",
+);
+
+.flaticon-down-arrow:before {
+    content: map-get($flaticon_kaizenbank-map, "down-arrow");
+}
+.flaticon-next:before {
+    content: map-get($flaticon_kaizenbank-map, "next");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_kaizenbank-map, "right-arrow");
+}
+.flaticon-down-arrow-1:before {
+    content: map-get($flaticon_kaizenbank-map, "down-arrow-1");
+}
+.flaticon-sparkle:before {
+    content: map-get($flaticon_kaizenbank-map, "sparkle");
+}
+.flaticon-play-store:before {
+    content: map-get($flaticon_kaizenbank-map, "play-store");
+}
+.flaticon-apple:before {
+    content: map-get($flaticon_kaizenbank-map, "apple");
+}
+.flaticon-chart-up:before {
+    content: map-get($flaticon_kaizenbank-map, "chart-up");
+}
+.flaticon-chevron:before {
+    content: map-get($flaticon_kaizenbank-map, "chevron");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon_kaizenbank-map, "facebook");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_kaizenbank-map, "twitter");
+}
+.flaticon-instagram-logo:before {
+    content: map-get($flaticon_kaizenbank-map, "instagram-logo");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_kaizenbank-map, "youtube");
+}
+.flaticon-vimeo:before {
+    content: map-get($flaticon_kaizenbank-map, "vimeo");
+}
+.flaticon-mobile-data:before {
+    content: map-get($flaticon_kaizenbank-map, "mobile-data");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon_kaizenbank-map, "right-arrow-1");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_kaizenbank-map, "star");
+}
