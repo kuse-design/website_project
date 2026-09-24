@@ -6,28 +6,28 @@ const LOAN_TYPES = [
     id: 'personal',
     label: 'Kaizen Personal Loan',
     amount: { min: 50000, max: 5000000, default: 500000, labels: ['₦50,000', '₦5 Million'] },
-    term: { min: 6, max: 12, default: 12, labels: ['6 Months', '12 Months'] },
+    term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'enterprise',
     label: 'Kaizen Enterprise Loan',
     amount: { min: 50000, max: 25000000, default: 1000000, labels: ['₦50,000', '₦25 Million'] },
-    term: { min: 6, max: 12, default: 12, labels: ['6 Months', '12 Months'] },
+    term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'asset',
     label: 'Kaizen Asset Loan',
     amount: { min: 25000000, max: 500000000, default: 50000000, labels: ['₦25 Million', '₦500 Million'] },
-    term: { min: 6, max: 12, default: 12, labels: ['6 Months', '12 Months'] },
+    term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'micro',
     label: 'Kaizen Micro Loan',
     amount: { min: 50000, max: 5000000, default: 200000, labels: ['₦50,000', '₦5 Million'] },
-    term: { min: 6, max: 12, default: 6, labels: ['6 Months', '12 Months'] },
+    term: { min: 1, max: 12, default: 6, labels: ['1 Month', '12 Months'] },
     rate: { value: '4%' }
   },
 ]
@@ -222,7 +222,7 @@ export default function LoanCalculator() {
                     <div className="amount-box">
                       <div className="emi-box centred">
                         <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-32.png" alt="" /></div>
-                        <h5>Monthly EMI</h5>
+                        <h5>Monthly Repayment</h5>
                         <h3>₦{fmt(emi)}</h3>
                         <div className="btn-box"><Link to="/"><span>Apply Online</span></Link></div>
                       </div>
