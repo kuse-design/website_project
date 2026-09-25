@@ -15,7 +15,7 @@ function NavigationItems({ isMobile = false, onNavigate = () => {} }) {
   return (
     <ul className="navigation clearfix">
       <li className="current">
-        <Link to="/" onClick={onNavigate}>Home</Link>
+        <a href="/">Home</a>
       </li>
       <li className={`dropdown ${isDropdownOpen('services') ? 'open' : ''}`}>
         <a href="#services" onClick={(e) => isMobile ? toggleDropdown(e, 'services') : null}>Services</a>
