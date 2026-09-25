@@ -43,7 +43,12 @@ export default function SavingsAccountPage(){
 
 
         
-        <DocumentsSection />
+        <DocumentsSection documents={[
+          'Completed Application Form',
+          'Resident [Identification Documents, Social Security Card]',
+          'Non Resident [Passport, Visa, Social Security Number]',
+          'Passport Size Photographs'
+        ]} />
         
 
 

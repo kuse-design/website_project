@@ -14,8 +14,7 @@ export default function FeaturesSection({ heading = 'Key Savings Account Feature
             <div className="feature-block-one">
               <div className="inner-box">
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-179.png" alt="" /></div>
-                <h3><Link to="/account-details">Free SMS Alerts</Link></h3>
-                <p>Business frequently occur that pleasure have to be repudiated.</p>
+                <h3><Link to="/account-details">SMS Alerts</Link></h3>
               </div>
             </div>
           </div>
@@ -24,7 +23,6 @@ export default function FeaturesSection({ heading = 'Key Savings Account Feature
               <div className="inner-box">
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-180.png" alt="" /></div>
                 <h3><Link to="/account-details">NDIC Insured</Link></h3>
-                <p>The wise man therefore always holds these principle of selection.</p>
               </div>
             </div>
           </div>
@@ -33,7 +31,6 @@ export default function FeaturesSection({ heading = 'Key Savings Account Feature
               <div className="inner-box">
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-181.png" alt="" /></div>
                 <h3><Link to="/account-details">Free ATM Access</Link></h3>
-                <p>Business frequently occur that pleasure have to be repudiated.</p>
               </div>
             </div>
           </div>
@@ -41,8 +38,7 @@ export default function FeaturesSection({ heading = 'Key Savings Account Feature
             <div className="feature-block-one">
               <div className="inner-box">
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-182.png" alt="" /></div>
-                <h3><Link to="/account-details">Mobile Check Deposit</Link></h3>
-                <p>The wise man therefore always holds these principle of selection.</p>
+                <h3><Link to="/account-details">Mobile App</Link></h3>
               </div>
             </div>
           </div>
@@ -51,7 +47,6 @@ export default function FeaturesSection({ heading = 'Key Savings Account Feature
               <div className="inner-box">
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-183.png" alt="" /></div>
                 <h3><Link to="/account-details">24/7 Online Banking</Link></h3>
-                <p>Holds these matters principles selection right some rejects.</p>
               </div>
             </div>
           </div>

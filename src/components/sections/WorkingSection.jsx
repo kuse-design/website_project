@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const DEFAULT_ICONS = ['icon-184.png', 'icon-185.png', 'icon-186.png', 'icon-187.png']
 
 const STEPS = [
-  ['01', 'Verify Customer', 'Nor again is there anyone who loves or pursues desire obtain pain all itself.'],
-  ['02', 'Documentation', 'One rejects, dislikes avoids pleasure itself because it is who do not know.'],
-  ['03', 'A/c Verification', 'Ever undertakes laborious physical exercise except in all advantages.'],
-  ['04', 'Start Banking', 'Foresee the pain & trouble that are bound ensue equal blame belongs fail.']
+  ['01', 'Verify Customer', ''],
+  ['02', 'Documentation', ''],
+  ['03', 'A/c Verification', ''],
+  ['04', 'Start Banking', '']
 ]
 
 export default function WorkingSection({ modClass = 'alternat-2 centred', icons, light = false }) {
@@ -17,7 +17,7 @@ export default function WorkingSection({ modClass = 'alternat-2 centred', icons,
       <div className="auto-container">
         <div className="sec-title">
           <span className={light ? 'sub-title light' : 'sub-title'}>How It’s Work</span>
-          <h2>Start Banking With in 5 Mins</h2>
+          <h2>Start Banking Within 5 Mins</h2>
         </div>
         <div className="row clearfix">
           {STEPS.map((s, idx) => (

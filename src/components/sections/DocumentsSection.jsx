@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function DocumentsSection() {
+const DEFAULT_DOCUMENTS = [
+  'Completed Application Form',
+  'Resident [Identification Documents, Social Security Card]',
+  'Non Resident [Passport, Visa, Social Security Number]'
+]
+
+export default function DocumentsSection({ documents = DEFAULT_DOCUMENTS }) {
   return (
     <section className="documents-section">
             <div className="bg-color bg-color-1"></div>
@@ -15,16 +21,13 @@ export default function DocumentsSection() {
                                     <span className="sub-title">Required Documents</span>
                                     <h2>Required Documents for Application</h2>
                                     <p>Please upload the necessary documents to complete.</p>
-                                    <Link to="/account-details"><span>Upload Now</span></Link>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-12 col-sm-12 list-column">
                                 <ul className="list-item clearfix">
-                                    <li><i className="flaticon-sparkle"></i>PAN Card is Mandatory</li>
-                                    <li><i className="flaticon-sparkle"></i>Completed Application Form</li>
-                                    <li><i className="flaticon-sparkle"></i>Non Resident <span>[Passpost, Visa, Social Security Number]</span></li>
-                                    <li><i className="flaticon-sparkle"></i>Resident <span>[Identification Documents, Social Security Card]</span></li>
-                                    <li><i className="flaticon-sparkle"></i>Passport Size Photographs</li>
+                                    {documents.map((doc, idx) => (
+                                      <li key={idx}><i className="flaticon-sparkle"></i>{doc}</li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>

@@ -43,7 +43,12 @@ export default function CurrentAccountPage(){
 
 
         
-        <DocumentsSection />
+        <DocumentsSection documents={[
+          'Completed Application Form',
+          'Resident [Identification Documents, Social Security Card]',
+          'Non Resident [Passport, Visa, Social Security Number]',
+          'Reference Letter'
+        ]} />
         
 
 

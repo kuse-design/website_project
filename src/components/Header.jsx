@@ -222,7 +222,7 @@ export default function Header() {
                             </div>
                             <div className="text">[or]</div>
                             <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Hamburg" />
+                              <input type="text" name="city" placeholder="City name: Lagos" />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
@@ -239,7 +239,7 @@ export default function Header() {
                             </div>
                             <div className="text">[or]</div>
                             <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Hamburg" />
+                              <input type="text" name="city" placeholder="City name: Lagos" />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
@@ -320,7 +320,7 @@ export default function Header() {
                             </div>
                             <div className="text">[or]</div>
                             <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Hamburg" />
+                              <input type="text" name="city" placeholder="City name: Lagos" />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
@@ -337,7 +337,7 @@ export default function Header() {
                             </div>
                             <div className="text">[or]</div>
                             <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Hamburg" />
+                              <input type="text" name="city" placeholder="City name: Lagos" />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
