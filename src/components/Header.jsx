@@ -159,7 +159,7 @@ export default function Header() {
               <div className="menu-area">
                 <div className="logo-box mr_110">
                   <figure className="logo">
-                    <Link to="/"><img src="/assets/images/banner/logo-2.png" alt="" /></Link>
+                    <a href="/"><img src="/assets/images/banner/logo-2.png" alt="" /></a>
                   </figure>
                 </div>
                 <div className="mobile-nav-toggler" onClick={() => setIsMobileOpen(true)}>
@@ -264,7 +264,7 @@ export default function Header() {
               <div className="menu-area">
                 <div className="logo-box mr_110">
                   <figure className="logo">
-                    <Link to="/"><img src="/assets/images/banner/logo-2.png" alt="" /></Link>
+                    <a href="/"><img src="/assets/images/banner/logo-2.png" alt="" /></a>
                   </figure>
                 </div>
                 <nav className="main-menu clearfix">
@@ -363,9 +363,9 @@ export default function Header() {
           </div>
           <nav className="menu-box">
             <div className="nav-logo">
-              <Link to="/" onClick={closeMobile}>
+              <a href="/" onClick={closeMobile}>
                 <img src="/assets/images/logo-2.png" alt="" title="" />
-              </Link>
+              </a>
             </div>
             <div className="menu-outer">
               <NavigationItems isMobile={true} onNavigate={closeMobile} />

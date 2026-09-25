@@ -124,12 +124,11 @@ export default function Footer(){
               </ul>
             </div>
             <div className="footer-logo">
-              <figure className="logo"><Link to="/"><img loading="lazy" src="/assets/images/banner/logo-2.png" alt=""/></Link></figure>
+              <figure className="logo"><a href="/"><img loading="lazy" src="/assets/images/banner/logo-2.png" alt=""/></a></figure>
             </div>
             <ul className="footer-nav clearfix">
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
-              <li><Link to="/">Disclaimer.</Link></li>
             </ul>
           </div>
         </div>
