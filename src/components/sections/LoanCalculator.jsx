@@ -43,21 +43,19 @@ const formatCurrency = (value) => {
 }
 
 /**
- * TEMPORARY maths — standard reducing-balance EMI.
- * The real formula will be supplied later. When it arrives, replace ONLY
- * the body of this function. It must keep accepting
- * (principal, annualRatePercent, months) and returning
- * { emi, totalInterest, totalPayment }.
+ * Simple interest calculation per Kaizen MFB specification:
+ * Monthly Repayment = (Principal + (Principal × Rate × months)) / months
+ * Total Interest = Principal × Rate × months
+ * Total Payment = Principal + Total Interest
+ * Rate is annual (e.g., 3.5% = 0.035)
  */
 const calculateResults = (principal, annualRatePercent, months) => {
-  const monthlyRate = annualRatePercent / 100 / 12
+  const rate = annualRatePercent / 100
   const safeMonths = Math.max(1, months)
-  const emi = monthlyRate === 0
-    ? principal / safeMonths
-    : (principal * monthlyRate * Math.pow(1 + monthlyRate, safeMonths)) /
-      (Math.pow(1 + monthlyRate, safeMonths) - 1)
-  const totalPayment = emi * safeMonths
-  return { emi, totalInterest: totalPayment - principal, totalPayment }
+  const totalInterest = principal * rate * safeMonths
+  const totalPayment = principal + totalInterest
+  const emi = totalPayment / safeMonths
+  return { emi, totalInterest, totalPayment }
 }
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
