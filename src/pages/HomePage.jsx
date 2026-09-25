@@ -244,8 +244,7 @@ export default function HomePage() {
                       <div className="content-box mr_50">
                         <h2>Fixed Deposit</h2>
                         <p>
-                          Beguiled and demoralized by the charms of pleasure of
-                          the so blinded by desire that they cannot foresee.
+                          Kaizen MFB Fixed Deposit is a structured investment product designed to provide clients with stable returns, capital preservation and moderate to low-risk exposure within the Naira-denominated market instruments.
                         </p>
                         <div className="inner-box">
                           <h6>Key Benefits:</h6>
@@ -290,7 +289,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Fixed Deposits Rate Guide
+                              Fixed Deposit Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
