@@ -33,7 +33,7 @@ function NavigationItems({ isMobile = false, onNavigate = () => {} }) {
               </div>
             )}
             <ul style={{ display: isMobile ? (isDropdownOpen('accounts') ? 'block' : 'none') : undefined }}>
-              <li><Link to="/account-details" onClick={onNavigate}>Savings Account</Link></li>
+              <li><Link to="/account-details" onClick={onNavigate}>Ruby Savings Account</Link></li>
               <li><Link to="/account-details-2" onClick={onNavigate}>Current Account</Link></li>
               <li><Link to="/account-details-6" onClick={onNavigate}>Business Account</Link></li>
             </ul>
