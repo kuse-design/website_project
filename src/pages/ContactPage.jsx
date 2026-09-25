@@ -3,11 +3,64 @@ import PageTitle from '../components/sections/PageTitle'
 import Tabs from '../components/ui/Tabs'
 import './ContactPage.css'
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+
 export default function ContactPage(){
   const [submitted, setSubmitted] = useState(false)
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  })
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+
+    try {
+      const res = await fetch(`${API_URL}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+      
+      // Check if response is ok before parsing JSON
+      if (!res.ok) {
+        const text = await res.text()
+        let errorMsg = `Server error: ${res.status}`
+        try {
+          const data = JSON.parse(text)
+          errorMsg = data.error || errorMsg
+        } catch {
+          errorMsg = text || errorMsg
+        }
+        throw new Error(errorMsg)
+      }
+      
+      const text = await res.text()
+      if (!text) {
+        throw new Error('Empty response from server')
+      }
+      
+      const data = JSON.parse(text)
+      setSubmitted(true)
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+    } catch (err) {
+      console.error('Contact form error:', err)
+      setError(err.message || 'Failed to send message. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
   return (
     <>
@@ -114,37 +167,84 @@ export default function ContactPage(){
                   {submitted && (
                     <div className="form-status success">Your message has been sent. Our support team will get back to you shortly.</div>
                   )}
+                  {error && (
+                    <div className="form-status error">{error}</div>
+                  )}
                   <form id="get-in-touch-form" onSubmit={handleSubmit} noValidate>
                     <div className="row clearfix">
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="form-group">
                           <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-221.png" alt="" /></div>
                           <label>Name</label>
-                          <input type="text" name="name" placeholder="Your name" required />
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                            value={formData.name}
+                            onChange={handleChange}
+                            disabled={loading}
+                          />
                         </div>
                         <div className="form-group">
                           <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-222.png" alt="" /></div>
                           <label>Email Address</label>
-                          <input type="email" name="email" placeholder="Your email address" required />
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Your email address"
+                            required
+                            value={formData.email}
+                            onChange={handleChange}
+                            disabled={loading}
+                          />
                         </div>
                         <div className="form-group">
                           <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-223.png" alt="" /></div>
                           <label>Phone Number</label>
-                          <input type="text" name="phone" placeholder="Your phone number" required />
+                          <input
+                            type="text"
+                            name="phone"
+                            placeholder="Your phone number"
+                            required
+                            value={formData.phone}
+                            onChange={handleChange}
+                            disabled={loading}
+                          />
                         </div>
                         <div className="form-group">
                           <label>Subject</label>
-                          <input type="text" name="subject" placeholder="Subject of your message" />
+                          <input
+                            type="text"
+                            name="subject"
+                            placeholder="Subject of your message"
+                            value={formData.subject}
+                            onChange={handleChange}
+                            disabled={loading}
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="form-group">
                           <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-236.png" alt="" /></div>
                           <label>Message</label>
-                          <textarea name="message" placeholder="Write your message here"></textarea>
+                          <textarea
+                            name="message"
+                            placeholder="Write your message here"
+                            value={formData.message}
+                            onChange={handleChange}
+                            disabled={loading}
+                          ></textarea>
                         </div>
                         <div className="form-group message-btn">
-                          <button type="submit" className="theme-btn" name="submit-form"><span>send a message</span></button>
+                          <button
+                            type="submit"
+                            className="theme-btn"
+                            name="submit-form"
+                            disabled={loading}
+                          >
+                            <span>{loading ? 'Sending...' : 'send a message'}</span>
+                          </button>
                         </div>
                       </div>
                     </div>
