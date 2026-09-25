@@ -130,7 +130,6 @@ export default function HomePage() {
         <section className="banking-service sec-pad">
           <div className="auto-container">
             <div className="sec-title centred">
-              <span className="sub-title">Custom Banking</span>
               <h2>Banking For Your Needs</h2>
             </div>
             <Tabs className="tabs-box">
@@ -911,7 +910,6 @@ export default function HomePage() {
           <div className="auto-container">
             <div className="title-box">
               <div className="sec-title light">
-                <span className="sub-title">Custom Banking</span>
                 <h2>Banking For Your Needs</h2>
               </div>
               <div className="support-box">
@@ -948,8 +946,8 @@ export default function HomePage() {
                               className="tab-btn-2 active-btn-2"
                               data-tab="#tab-11"
                             >
-                              <h4>Savings Accounts</h4>
-                              <p>High interest...</p>
+                              <h4>Savings Account</h4>
+                              <p>Save with confidence...</p>
                             </li>
                             <li className="tab-btn-2" data-tab="#tab-12">
                               <h4>Consumer Loans</h4>
@@ -975,16 +973,12 @@ export default function HomePage() {
                                 </div>
                                 <h4>Savings Account</h4>
                                 <h2>
-                                  Invest in Your Future, <br />
-                                  Start Saving.
+                                  Save with confidence and take control of your financial future.
                                 </h2>
                               </div>
                               <div className="inner-box">
                                 <p>
-                                  Every pleasure is to be welcomed and every
-                                  pain avoided duty or the obligations of
-                                  business our power of choice is untrammelled
-                                  and when nothing prevents.
+                                  Our Savings Account provides a secure and convenient way to manage your money, build your savings, and achieve your financial goals.
                                 </p>
                                 </div>
                             </div>
@@ -1060,12 +1054,12 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="count-outer">
-                  <span className="odometer" data-count="8.5">
+                  <span className="odometer" data-count="85">
                     00
                   </span>
-                  <span className="symble">k</span>
+                  <span className="symble">k+</span>
                 </div>
-                <p>Happy Customers World Wide.</p>
+                <p>Transaction Processed Daily.</p>
               </div>
             </div>
             <div className="funfact-block-one">
@@ -1078,12 +1072,12 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="count-outer">
-                  <span className="odometer" data-count="0.5">
+                  <span className="odometer" data-count="150">
                     00
                   </span>
                   <span className="symble">m</span>
                 </div>
-                <p>Transactions Processed Daily.</p>
+                <p>Transaction Processed Daily.</p>
               </div>
             </div>
             <div className="funfact-block-one">
@@ -1096,12 +1090,12 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="count-outer">
-                  <span className="odometer" data-count="10000">
+                  <span className="odometer" data-count="1">
                     00
                   </span>
-                  <span className="symble">+</span>
+                  <span className="symble"></span>
                 </div>
-                <p>ATMs and Branches Globally.</p>
+                <p>ATM and Branches Globally.</p>
               </div>
             </div>
             <div className="funfact-block-one">
@@ -1114,7 +1108,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="count-outer">
-                  <span className="odometer" data-count="50">
+                  <span className="odometer" data-count="5">
                     00
                   </span>
                   <span className="symble">+</span>
@@ -1153,8 +1147,6 @@ export default function HomePage() {
                       alt=""
                     />
                   </figure>
-                  <span className="highlights-one">Cashback Up to: 25%</span>
-                  <span className="highlights-two">Average APR: 5.50%</span>
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
@@ -1506,36 +1498,7 @@ export default function HomePage() {
               <h2>Read Questions & Answers</h2>
             </div>
             <div className="row clearfix">
-              <div className="col-lg-4 col-md-12 col-sm-12 category-column">
-                <div className="category-box">
-                  <h3>Categories</h3>
-                  <p>Wide range of topics to address common queries.</p>
-                  <ul className="category-list clearfix">
-                    <li>
-                      <Link to="/">Account</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Online Banking</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Mobile Banking</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Deposits</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Withdrawals</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Loans</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Business</Link>
-                    </li>
-                  </ul>
-                  </div>
-              </div>
-              <div className="col-lg-8 col-md-12 col-sm-12 accordion-column">
+              <div className="col-lg-12 col-md-12 col-sm-12 accordion-column">
                 <ul className="accordion-box">
                   <li className="accordion block active-block">
                     <div className="acc-btn active">

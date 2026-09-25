@@ -45,7 +45,7 @@ export default function Footer(){
                     <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-35.png" alt=""/></div>
                     <h4><a href="mailto:info@kaizenmfb.com">info@kaizenmfb.com</a></h4>
                     <p>Send your queries.</p>
-                    <div className="link-box"><Link to="/contact"><i className="flaticon-right-arrow"></i></Link></div>
+                    <div className="link-box"><a href="mailto:info@kaizenmfb.com"><i className="flaticon-right-arrow"></i></a></div>
                   </div>
                 </div>
               </div>
@@ -97,11 +97,11 @@ export default function Footer(){
             <ul className="list-item">
               <li>
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-38.png" alt=""/></div>
-                <h4><Link to="/">Branches & ATMs</Link></h4>
+                <h4><Link to="/contact">Branches & ATMs</Link></h4>
               </li>
               <li>
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-39.png" alt=""/></div>
-                <h4><Link to="/">Complaint Registration</Link></h4>
+                <h4><Link to="/contact">Complaint Registration</Link></h4>
               </li>
               <li>
                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-40.png" alt=""/></div>
