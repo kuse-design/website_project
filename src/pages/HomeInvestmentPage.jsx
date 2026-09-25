@@ -195,7 +195,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -228,7 +228,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -261,7 +261,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -294,7 +294,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -327,7 +327,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -360,7 +360,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -393,7 +393,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>
@@ -426,7 +426,7 @@ export default function HomeInvestmentPage(){
                                             </ul>
                                             <div className="inner">
                                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-138.png" alt="" /></div>
-                                                <h4>Guide to <br />Fixed Deposits</h4>
+                                                <h4>Fixed Deposits Rate Guide</h4>
                                                 <h6>pdf 6.8mb</h6>
                                                 <button type="button" className="theme-btn"><span>Download</span></button>
                                             </div>

@@ -290,8 +290,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -375,8 +374,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -460,8 +458,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -545,8 +542,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -630,8 +626,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -715,8 +710,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -800,8 +794,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
@@ -885,8 +878,7 @@ export default function HomePage() {
                               />
                             </div>
                             <h4>
-                              Guide to <br />
-                              Fixed Deposits
+                              Fixed Deposits Rate Guide
                             </h4>
                             <h6>pdf 6.8mb</h6>
                             <button type="button" className="theme-btn">
