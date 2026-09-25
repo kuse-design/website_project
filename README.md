@@ -6,3 +6,4 @@ Notes:
 
 Commands:
 - `npm install` then `npm run dev` to start development.
+# kaizen-new-website
