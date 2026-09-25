@@ -178,9 +178,6 @@ export default function Header() {
                   <img loading="lazy" src="/assets/images/icons/icon-8.png" alt="" />
                   <Link to="/contact">Support</Link>
                 </div>
-                <div className="support-box open-account-box mr_50">
-                  <a href="https://kaizenmfb.qoreonline.com/" target="_blank" rel="noreferrer">Open New Account</a>
-                </div>
                 <div className="btn-box mr_10">
                   <Link to="/account-details" className="theme-btn"><span>New Account</span></Link>
                 </div>
@@ -275,9 +272,6 @@ export default function Header() {
                 <div className="support-box mr_50">
                   <img loading="lazy" src="/assets/images/icons/icon-8.png" alt="" />
                   <Link to="/contact">Support</Link>
-                </div>
-                <div className="support-box open-account-box mr_50">
-                  <a href="https://kaizenmfb.qoreonline.com/" target="_blank" rel="noreferrer">Open New Account</a>
                 </div>
                 <div className="btn-box mr_10">
                   <Link to="/account-details" className="theme-btn"><span>New Account</span></Link>

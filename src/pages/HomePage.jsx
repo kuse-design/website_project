@@ -1491,10 +1491,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="faq-section sec-pad bg-color-1">
+<section className="faq-section sec-pad bg-color-1">
           <div className="auto-container">
             <div className="sec-title centred">
-              <span className="sub-title">Faq’s</span>
+              <span className="sub-title">Faq's</span>
               <h2>Read Questions & Answers</h2>
             </div>
             <div className="row clearfix">
@@ -1512,9 +1512,7 @@ export default function HomePage() {
                     <div className="acc-content current">
                       <div className="content">
                         <p>
-                          Repudiated and annoyances accepted the wise man
-                          therefore always holds in these matters to this
-                          principle selection he rejects pleasures to secures.
+                          Opening an account with Kaizen MFB is simple and convenient. You can visit any of our branches or use our approved digital account-opening channels. Follow the registration process, provide the required information and valid identification documents, and your account will be created once verification is completed.
                         </p>
                       </div>
                     </div>
@@ -1531,9 +1529,7 @@ export default function HomePage() {
                     <div className="acc-content">
                       <div className="content">
                         <p>
-                          Repudiated and annoyances accepted the wise man
-                          therefore always holds in these matters to this
-                          principle selection he rejects pleasures to secures.
+                          You can check your account balance conveniently through our digital banking channels, including the Kaizen MFB Mobile App and Internet Banking. Simply log in securely to view your available balance and recent account activities.
                         </p>
                       </div>
                     </div>
@@ -1550,9 +1546,7 @@ export default function HomePage() {
                     <div className="acc-content">
                       <div className="content">
                         <p>
-                          Repudiated and annoyances accepted the wise man
-                          therefore always holds in these matters to this
-                          principle selection he rejects pleasures to secures.
+                          Yes. Kaizen MFB's online banking platform is designed with security measures to help protect your account and personal information. Always keep your login details, PIN, OTP, and other security credentials confidential, and never share them with anyone.
                         </p>
                       </div>
                     </div>
@@ -1569,9 +1563,7 @@ export default function HomePage() {
                     <div className="acc-content">
                       <div className="content">
                         <p>
-                          Repudiated and annoyances accepted the wise man
-                          therefore always holds in these matters to this
-                          principle selection he rejects pleasures to secures.
+                          Your daily ATM withdrawal limit depends on your account type, card profile, and applicable regulatory or banking limits. Please contact Kaizen MFB Customer Service or visit a branch for the specific withdrawal limit applicable to your card.
                         </p>
                       </div>
                     </div>
@@ -1588,9 +1580,58 @@ export default function HomePage() {
                     <div className="acc-content">
                       <div className="content">
                         <p>
-                          Repudiated and annoyances accepted the wise man
-                          therefore always holds in these matters to this
-                          principle selection he rejects pleasures to secures.
+                          You can apply for a loan through our available digital or branch channels. Select the loan product that meets your needs, provide the required information and supporting documents, and submit your application for assessment. Once approved, the loan will be disbursed in accordance with the applicable terms and conditions.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="accordion block">
+                    <div className="acc-btn">
+                      <div className="icon-box">
+                        <i className="flaticon-chevron"></i>
+                      </div>
+                      <h4>
+                        <span>06</span>Is online banking secure?
+                      </h4>
+                    </div>
+                    <div className="acc-content">
+                      <div className="content">
+                        <p>
+                          Yes. Kaizen MFB uses security controls to protect your online banking activities and account information. For your safety, do not share your password, PIN, OTP, or other authentication details with anyone. If you notice any suspicious activity, contact us immediately.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="accordion block">
+                    <div className="acc-btn">
+                      <div className="icon-box">
+                        <i className="flaticon-chevron"></i>
+                      </div>
+                      <h4>
+                        <span>07</span>What is the daily ATM withdrawal limit?
+                      </h4>
+                    </div>
+                    <div className="acc-content">
+                      <div className="content">
+                        <p>
+                          ATM withdrawal limits vary depending on your card and account profile and may also be subject to applicable regulatory limits. For details about your specific card limit, please contact our Customer Service team.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="accordion block">
+                    <div className="acc-btn">
+                      <div className="icon-box">
+                        <i className="flaticon-chevron"></i>
+                      </div>
+                      <h4>
+                        <span>08</span>How do I apply for a loan?
+                      </h4>
+                    </div>
+                    <div className="acc-content">
+                      <div className="content">
+                        <p>
+                          To apply for a loan, log in to the relevant Kaizen MFB digital platform or visit any of our branches. Choose your preferred loan product, complete the application form, provide the required information, and submit your application. Your application will be reviewed based on the applicable eligibility and credit assessment criteria.
                         </p>
                       </div>
                     </div>

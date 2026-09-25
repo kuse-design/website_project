@@ -8,6 +8,21 @@ const FORMS = [
     kind: 'PDF',
   },
   {
+    name: 'Kaizen Corporate AOF',
+    file: '/Documents/Kaizen%20Corporate%20AOF%20(2).pdf',
+    kind: 'PDF',
+  },
+  {
+    name: 'Kaizen Mandate Form',
+    file: '/Documents/Kaizen%20Mandate%20Form.pdf',
+    kind: 'PDF',
+  },
+  {
+    name: 'Kaizen MFB Reference Form',
+    file: '/Documents/Kaizen%20MFB%20Reference%20Form%20(1).pdf',
+    kind: 'PDF',
+  },
+  {
     name: 'Dormant Account Reactivation Form',
     file: '/Documents/DORMANT%20ACCOUNT%20REACTIVATION%20FORM.docx',
     kind: 'DOCX',
