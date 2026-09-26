@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 const LOAN_TYPES = [
   {
@@ -227,7 +226,7 @@ export default function LoanCalculator() {
                         <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-32.png" alt="" /></div>
                         <h5>Monthly Repayment</h5>
                         <h3>₦{fmt(emi)}</h3>
-                        <div className="btn-box"><Link to="/"><span>Apply Online</span></Link></div>
+                        <div className="btn-box"><a href="https://www.klickcash.ng/kaizen" target="_blank" rel="noopener noreferrer" className="theme-btn"><span>Apply Now</span></a></div>
                       </div>
                       <div className="interest-amount">
                         <div className="single-amount">
