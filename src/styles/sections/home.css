@@ -1572,6 +1572,19 @@
   max-width: 1400px;
 }
 
+/* Mobile-first: image block shown first on mobile */
+.calculator-section .mobile-image-block{
+  display: none;
+}
+
+.calculator-section .mobile-image-block img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
 .calculator-section .inner-container{
   position: relative;
   display: block;

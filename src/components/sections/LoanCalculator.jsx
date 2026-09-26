@@ -112,6 +112,11 @@ export default function LoanCalculator() {
 
   return (
     <section className="calculator-section pt_120 pb_120">
+      {/* Mobile-first: image as block element first */}
+      <div className="mobile-image-block">
+        <img loading="lazy" src="/assets/images/resource/men-2.webp" alt="" />
+      </div>
+      {/* Desktop: absolutely positioned image layer */}
       <figure className="image-layer">
         <img loading="lazy" src="/assets/images/resource/men-2.webp" alt="" />
       </figure>
