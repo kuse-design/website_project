@@ -233,7 +233,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -316,7 +316,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -400,7 +400,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -484,7 +484,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -568,7 +568,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -652,7 +652,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -736,7 +736,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -820,7 +820,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/ATM machine.webp"
+                            src="/assets/images/banner/atm machine.png"
                             alt=""
                           />
                         </figure>
@@ -931,7 +931,7 @@ export default function HomePage() {
               <figure className="support-image">
                 <img
                   loading="lazy"
-                  src="/assets/images/banner/support.jpg"
+                  src="/assets/images/banner/support1.png"
                   alt=""
                 />
               </figure>
@@ -1145,6 +1145,7 @@ export default function HomePage() {
                       loading="lazy"
                       src="/assets/images/icons/card-1.png"
                       alt=""
+                      className="floating-card"
                     />
                   </figure>
                 </div>
@@ -1394,6 +1395,54 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
+
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <div className="partner-block">
+                  <div className="inner-box">
+                    <div className="image-box">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/partners/prembly-logo.webp"
+                        alt="Prembly"
+                      />
+                    </div>
+                    <h3>Prembly</h3>
+                    <p>Identity & Compliance</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <div className="partner-block">
+                  <div className="inner-box">
+                    <div className="image-box">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/partners/zenith.png"
+                        alt="Zenith Bank"
+                      />
+                    </div>
+                    <h3>Zenith Bank</h3>
+                    <p>Commercial Banking</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <div className="partner-block">
+                  <div className="inner-box">
+                    <div className="image-box">
+                      <img
+                        loading="lazy"
+                        src="/assets/images/partners/yalo.png"
+                        alt="Yalo"
+                      />
+                    </div>
+                    <h3>Yalo</h3>
+                    <p>Conversational AI</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="partners-marquee">
@@ -1441,6 +1490,15 @@ export default function HomePage() {
                   <div className="marquee-item">
                     <img loading="lazy" src="/assets/images/partners/FirstCentral.png" alt="FirstCentral Credit Bureau" />
                   </div>
+                  <div className="marquee-item">
+                    <img loading="lazy" src="/assets/images/partners/prembly-logo.webp" alt="Prembly" />
+                  </div>
+                  <div className="marquee-item">
+                    <img loading="lazy" src="/assets/images/partners/zenith.png" alt="Zenith Bank" />
+                  </div>
+                  <div className="marquee-item">
+                    <img loading="lazy" src="/assets/images/partners/yalo.png" alt="Yalo" />
+                  </div>
                 </div>
                 <div className="marquee-group" aria-hidden="true">
                   <div className="marquee-item">
@@ -1484,6 +1542,15 @@ export default function HomePage() {
                   </div>
                   <div className="marquee-item">
                     <img loading="lazy" src="/assets/images/partners/FirstCentral.png" alt="" />
+                  </div>
+                  <div className="marquee-item">
+                    <img loading="lazy" src="/assets/images/partners/prembly-logo.webp" alt="" />
+                  </div>
+                  <div className="marquee-item">
+                    <img loading="lazy" src="/assets/images/partners/zenith.png" alt="" />
+                  </div>
+                  <div className="marquee-item">
+                    <img loading="lazy" src="/assets/images/partners/yalo.png" alt="" />
                   </div>
                 </div>
               </div>

@@ -27,22 +27,23 @@ const executives = [
     id: 4,
     name: 'Benson Roy',
     designation: 'Financial Controller',
-    image: '/assets/images/banner/executive4.jpeg',
+    image: '/assets/images/banner/executive4.0.png',
     email: 'benson@kaizenng.com',
     bio: "Roy serves as the Financial Controller at Kaizen Microfinance Bank. In this capacity, he leads the company's financial strategy and oversees risk management, ensuring robust governance and long-term value creation.\n\nWith more than a decade of professional experience spanning banking operations, credit administration, risk management, internal audit, and financial controls, Roy has held senior roles at ClearPay, First Generation Mortgage Bank, and Aso Savings and Loans Plc. His diverse background equips him to drive prudent financial management while aligning risk oversight with organizational growth objectives.\n\nA Chartered Accountant, he holds a Bachelor's degree in Accounting, an advanced degree in Business Administration, and a Financial Management credential from the London School of Business Administration. He is certified in Financial Modelling & Valuation, Business Intelligence, Risk Management, Credit Analysis, and ESG, and is currently pursuing a Ph.D. in Business Administration to further deepen his expertise in corporate finance and strategic management."
   },
   {
     id: 5,
-    name: 'Adebayo Tomiwa',
-    designation: 'Head of Credit Admin',
-    image: '/assets/images/banner/executive5.1.jpg',
-    email: 'adebayo@kaizenng.com'
+    name: 'Ayotomiwa Adedotun Adebayo',
+    designation: 'Head, Credit Administration',
+    image: '/assets/images/banner/executive5.0.png',
+    email: 'adebayo@kaizenng.com',
+    bio: "Ayotomiwa Adedotun Adebayo is a banking and credit professional with experience spanning credit operations, loan structuring and restructuring, portfolio monitoring, operational risk, and credit governance.\n\nHe holds a B.Sc. in Economics from Tai Solarin University of Education and his professional foundation was developed within the banking environments of Access Bank and Fidelity Bank's Crest Academy, where he gained experience in financial operations, GL reconciliation, loan booking and restructuring, credit processes, and operational risk management. These experiences have shaped his approach to credit administration, with particular emphasis on disciplined execution, effective controls, regulatory compliance, and portfolio quality.\n\nAt Kaizen Microfinance Bank, Ayotomiwa serves as Head, Credit Administration, providing oversight across the Bank's credit administration and control processes. His responsibilities include ensuring that approved credit facilities are properly documented, accurately booked, compliant with approved terms and internal policies, and appropriately monitored through the credit lifecycle.\n\nHe is particularly focused on strengthening the Bank's credit governance and risk-management framework, improving documentation standards, driving process efficiency, supporting portfolio quality, and building a culture of accountability across the credit function. He also contributes to the development and implementation of credit policies, products, risk controls, portfolio monitoring frameworks, and credit initiatives designed to support responsible growth.\n\nHis professional interests include credit risk management, financial inclusion, SME and retail lending, credit process digitalisation, portfolio quality management, and banking operations. He is committed to combining sound credit principles with practical business solutions that enable financial institutions to grow sustainably while maintaining strong risk and governance standards."
   },
   {
     id: 6,
     name: 'Afolabi Abimbola',
     designation: 'Team Lead Agro Allied',
-    image: '/assets/images/banner/executive6.jpg',
+    image: '/assets/images/banner/executive6.0.png',
     email: 'afolabi@kaizenng.com',
     bio: "Afolabi's career is positively identified by healthy achievement which spreads across well recognized financial institutions which include banking sectors and stock brokerage firm. He started his career with Eco Bank as Portfolio Manager and International Fund for Agric. Development as Technical Financial Advisor for rural farmers.\n\nFor being successful at these initial positions, he was identified by Advans La Fayette Microfinance Bank to be their country Loan Manager and to establish Agricultural loan portfolio which he accepted and established successfully. He also managed a huge loan portfolio reporting directly to head of business development. He worked as Team Lead for loan (Micro/SME) managers reporting to Regional Sales Manager at Renmoney MFBank.\n\nAdditionally, he worked as Stockbroker / Retail Sales Manager with Coronation Securities Limited which made him got a standout performance for bringing-in one billion naira for a single transaction in the history of the organization. He solidified his leadership path, leading directly to his appointment as Team-lead in Business Development Department at Kaizen Microfinance Bank."
   }

@@ -314,7 +314,7 @@ export default function HomeSpotlightPage(){
                     </div>
                 </div>
                 <Tabs className="tabs-box">
-                    <figure className="support-image"><img loading="lazy" src="/assets/images/banner/support.jpg" alt="" /></figure>
+                    <figure className="support-image"><img loading="lazy" src="/assets/images/banner/support1.png" alt="" /></figure>
                     <div className="tab-btn-one">
                         <ul className="tab-btns tab-buttons clearfix">
                             <li className="tab-btn active-btn" data-tab="#tab-9">Business</li>
