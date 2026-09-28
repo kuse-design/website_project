@@ -5,97 +5,42 @@ import executives from './leadershipData.js'
 export default function LeadershipPage(){
   return (
     <>
-
-
     <div className="boxed_wrapper">
-
-
-        
-
-
-         
-        
-
-
-        
-
-
-        
-
-
-        
         <section className="leadership-banner">
             <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-4.png)' }}></div>
             <div className="auto-container">
                 <div className="content-box">
-                    <h1>Leadership</h1>
+                    <h1>Executive Management</h1>
                 </div>
             </div>
         </section>
-        
-
-
         
         <section className="team-section sec-pad-2">
             <div className="auto-container">
                 <div className="sec-title centred">
-                    <span className="sub-title">Team Members</span>
-                    <h2>Leadership & Executive Team</h2>
+                    <span className="sub-title">Our Leaders</span>
+                    <h2>Executive Management Team</h2>
                 </div>
-                <div className="row clearfix">
+                <div className="row clearfix executive-grid">
                     {executives.map((exec) => (
-                        <div className="col-lg-3 col-md-6 col-sm-12 team-block" key={exec.id}>
-                            <div className="team-block-one">
-                                <div className="inner-box">
-                                    <div className="image-box">
-                                        <figure className="image"><img loading="lazy" src={`${exec.image}?v=5`} alt={exec.name} width={640} height={705} /></figure>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><Link to={`/team-details/${exec.id}`}>{exec.name}</Link></h3>
-                                        <span className="designation">{exec.designation}</span>
-                                    </div>
+                        <article className="col-lg-4 col-md-6 col-sm-12 team-block" key={exec.id}>
+                            <Link to={`/team-details/${exec.id}`} className="executive-card" aria-label={`View ${exec.name} profile`}>
+                                <div className="image-wrapper">
+                                    <figure className="image">
+                                        <img loading="lazy" src={`${exec.image}?v=5`} alt={exec.name} width={480} height={600} />
+                                    </figure>
                                 </div>
-                            </div>
-                        </div>
+                                <div className="content-wrapper">
+                                    <h3 className="executive-name">{exec.name}</h3>
+                                    <p className="executive-title">{exec.designation}</p>
+                                </div>
+                            </Link>
+                        </article>
                     ))}
                 </div>
             </div>
         </section>
-        
-
-
-        
-
-
-
-
-        
-
-
     </div>
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-
     </>
   )
 }

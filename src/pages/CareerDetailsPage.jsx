@@ -38,7 +38,7 @@ export default function CareerDetailsPage(){
                                 <span className="text">Finance Department</span>
                                 <h3>Sales Representative</h3>
                                 <span className="location"><img loading="lazy" src="/assets/images/icons/icon-210.png" alt="" />Lagos, Nigeria</span>
-                                <div className="btn-box"><Link to="/career-details"><i className="flaticon-right-arrow"></i><span>Apply Now</span></Link></div>
+                                <div className="btn-box"><a href="mailto:hr@kaizenmfb.com"><i className="flaticon-right-arrow"></i><span>Apply Now</span></a></div>
                             </div>
                             <div className="content-one mb_35">
                                 <h3>Job Description</h3>
@@ -88,19 +88,6 @@ export default function CareerDetailsPage(){
                                         <p>26 Days of Annual Leave</p>
                                     </li>
                                 </ul>
-                            </div>
-                            <div className="support-box">
-                                <figure className="image-box"><img loading="lazy" src="/assets/images/resource/support-1.png" alt="" /></figure>
-                                <div className="lower-content">
-                                    <span className="big-text">support</span>
-                                    <ul className="info-list mb_30 pb_3 clearfix">
-                                        <li><a href="tel:08008961234">0800 896 1234</a> <span>(Toll Free)</span> <br />Personal</li>
-                                        <li><a href="tel:496912345678">+49 69 1234 5678 </a> <br />Corporate</li>
-                                    </ul>
-                                    <div className="btn-box">
-                                        <Link to="/index-4"><span>Send Your Queries</span></Link>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

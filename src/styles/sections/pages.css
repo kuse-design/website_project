@@ -1208,6 +1208,283 @@
 }
 
 
+/** verve-card-details **/
+
+.card-details .content-section{
+  position: relative;
+  display: block;
+}
+
+.card-details .content-section .text-box h6{
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--theme-color);
+  margin-bottom: 12px;
+}
+
+.card-details .content-section .text-box h2{
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 28px;
+}
+
+.card-details .content-section .text-box p{
+  margin-bottom: 19px;
+}
+
+.card-details .content-section .image-box .row{
+  margin: 0 -15px;
+}
+
+.card-details .content-section .image-box .image-column{
+  padding: 0 15px;
+}
+
+.card-details .content-section .image-box .image{
+  position: relative;
+  display: block;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-details .content-section .image-box .image img{
+  width: 100%;
+}
+
+.card-details .fees-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.card-details .fees-table th,
+.card-details .fees-table td{
+  padding: 15px 20px;
+  border: 1px solid #e6e4e4;
+  text-align: left;
+}
+
+.card-details .fees-table th{
+  background: var(--secondary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-details .fees-table td{
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-color);
+}
+
+.card-details .fees-table tbody tr:nth-child(even){
+  background: #f5f4f4;
+}
+
+.card-details .fees-table tbody tr:hover{
+  background: #fff8f8;
+}
+
+.card-details .apply-box{
+  position: relative;
+  display: flex;
+  gap: 25px;
+  background: #f5f4f4;
+  padding: 35px 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.card-details .apply-box .icon-box{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: var(--theme-color);
+  text-align: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.card-details .apply-box .icon-box img{
+  display: inline-block;
+  filter: brightness(0) invert(1);
+}
+
+.card-details .apply-box .text-content h4{
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.card-details .apply-box .text-content p{
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.card-details .apply-box .text-content a{
+  color: var(--theme-color);
+  text-decoration: underline;
+}
+
+.card-details .apply-box .text-content a:hover{
+  color: var(--secondary-color);
+}
+
+.card-details .list-style-two li{
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-color);
+}
+
+.card-details .list-style-two li:before{
+  position: absolute;
+  content: '';
+  background-image: url(/assets/images/icons/icon-16.png);
+  width: 20px;
+  height: 12px;
+  left: 0px;
+  top: 7px;
+  background-repeat: no-repeat;
+}
+
+.card-details .accordion-box{
+  position: relative;
+  display: block;
+}
+
+.card-details .accordion-box .accordion{
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #e6e4e4;
+}
+
+.card-details .accordion-box .accordion.active-block{
+  background: #f5f4f4;
+  border-color: var(--secondary-color);
+}
+
+.card-details .accordion-box .accordion .acc-btn{
+  position: relative;
+  cursor: pointer;
+  padding: 21px 60px 21px 29px;
+}
+
+.card-details .accordion-box .accordion .acc-btn h4{
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.card-details .accordion-box .accordion.active-block .acc-btn h4{
+  color: var(--theme-color);
+}
+
+.card-details .accordion-box .accordion .acc-btn .icon-box{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 68px;
+  height: 100%;
+  line-height: 70px;
+  text-align: center;
+  font-size: 20px;
+  color: #a8a7a7;
+}
+
+.card-details .accordion-box .accordion.active-block .acc-btn .icon-box{
+  color: var(--theme-color);
+}
+
+.card-details .accordion-box .accordion .acc-btn .icon-box i{
+  position: relative;
+  display: inline-block;
+  transition: all 500ms ease;
+}
+
+.card-details .accordion-box .accordion.active-block .acc-btn .icon-box i{
+  transform: rotate(180deg);
+}
+
+.card-details .accordion-box .accordion .acc-btn .icon-box:before{
+  position: absolute;
+  content: '';
+  background: #e6e4e4;
+  width: 1px;
+  height: 40px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-details .accordion-box .accordion.active-block .acc-btn .icon-box:before{
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.card-details .accordion-box .accordion .acc-content{
+  position: relative;
+  padding: 0 30px 30px 30px;
+  display: none;
+}
+
+.card-details .accordion-box .accordion.active-block .acc-content{
+  display: block;
+}
+
+.card-details .accordion-box .accordion .acc-content p{
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 991px){
+  .card-details .apply-box{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card-details .apply-box .icon-box{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .card-details .content-section .text-box h2{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .card-details .fees-table th,
+  .card-details .fees-table td{
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .card-details .accordion-box .accordion .acc-btn{
+    padding: 18px 50px 18px 20px;
+  }
+  
+  .card-details .accordion-box .accordion .acc-btn h4{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .leadership-banner{
   position: relative;
   padding: 136px 0px 32px 0px;

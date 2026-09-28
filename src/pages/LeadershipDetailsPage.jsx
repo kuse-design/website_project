@@ -30,7 +30,7 @@ export default function LeadershipDetailsPage(){
 
 
         
-        <PageTitle title={"Leadership Details"} crumbs={[{ label: "About", to: "/about" }, { label: "Leadership", to: "/team" }]} />
+        <PageTitle title={"Executive Profile"} crumbs={[{ label: "About", to: "/about" }, { label: "Executive Management", to: "/team" }]} />
         
 
 

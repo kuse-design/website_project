@@ -809,13 +809,17 @@
 .team-details .image-box{
   position: relative;
   display: block;
+  background: #f4f1ea;
+  padding: 30px;
+  border-radius: 0;
 }
 
 .team-details .image-box img{
   width: 100%;
   display: block;
-  aspect-ratio: 640 / 705;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .team-details .content-box{
@@ -918,6 +922,271 @@
   color: #fff;
   background: var(--theme-color);
   border-color: var(--theme-color);
+}
+
+/* Executive Management Grid - Access Corporation Style */
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+}
+
+@media (max-width: 1024px) {
+  .executive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .executive-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.executive-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 300ms ease;
+}
+
+.executive-card:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.executive-card .image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  background: #f4f1ea;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 0;
+}
+
+.executive-card .image-wrapper .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.executive-card .image-wrapper .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 600ms ease;
+}
+
+.executive-card:hover .image-wrapper .image img {
+  transform: scale(1.05);
+}
+
+.executive-card .content-wrapper {
+  padding: 20px 0 0 0;
+  text-align: left;
+}
+
+.executive-card .executive-name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--title-color);
+  margin: 0 0 6px 0;
+  font-family: var(--title-font);
+  letter-spacing: -0.02em;
+}
+
+.executive-card .executive-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--text-font);
+}
+
+/* Specific fix for executive4.0.png - ensure proper head positioning */
+.executive-card .image-wrapper .image img[src*="executive4"] {
+  object-position: center 5%;
+}
+
+.executive-card .image-wrapper .image img[src*="executive5"] {
+  object-position: center 18%;
+}
+
+.executive-card .image-wrapper .image img[src*="executive6"] {
+  object-position: center 15%;
+}
+
+/* Personal Loan Page Styles */
+.loan-types {
+  background: #fff;
+}
+.types-grid {
+  margin-top: 40px;
+}
+.type-block {
+  margin-bottom: 24px;
+}
+.type-item {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background: var(--cream-color);
+  border-radius: 8px;
+  border: 1px solid #e6e4e4;
+  transition: all 300ms ease;
+  height: 100%;
+}
+.type-item:hover {
+  border-color: var(--theme-color);
+  box-shadow: 0 10px 30px rgba(201,162,39,0.15);
+  transform: translateY(-4px);
+}
+.type-item .icon-box {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--theme-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type-item .icon-box img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+.type-item p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-color);
+  font-weight: 600;
+  font-family: var(--title-font);
+}
+
+.loan-features {
+  background: var(--cream-color);
+}
+.features-grid {
+  margin-top: 40px;
+}
+.feature-block {
+  margin-bottom: 24px;
+}
+.feature-item {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e6e4e4;
+  transition: all 300ms ease;
+  height: 100%;
+}
+.feature-item:hover {
+  border-color: var(--theme-color);
+  box-shadow: 0 10px 30px rgba(201,162,39,0.15);
+  transform: translateY(-4px);
+}
+.feature-item .icon-box {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: rgba(201,162,39,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-item .icon-box img {
+  width: 24px;
+  height: 24px;
+}
+.feature-item p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+}
+
+.loan-requirements {
+  background: #fff;
+}
+.requirements-card {
+  background: #fff;
+  border: 1px solid #e6e4e4;
+  border-radius: 8px;
+  padding: 40px;
+  height: 100%;
+}
+.guarantor-card {
+  background: var(--cream-color);
+  border-color: var(--theme-color);
+}
+.requirements-card .sec-title {
+  margin-bottom: 24px;
+}
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.requirements-list li {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0eeea;
+  align-items: flex-start;
+}
+.requirements-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.requirements-list li .icon-box {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--theme-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+.requirements-list li .icon-box img {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
+}
+.requirements-list li span {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+}
+
+@media (max-width: 991px) {
+  .requirements-card {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-item {
+    padding: 20px;
+  }
+  .requirements-card {
+    padding: 24px 20px;
+  }
+  .requirements-list li span {
+    font-size: 15px;
+  }
 }
 
 

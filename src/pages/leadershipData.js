@@ -42,7 +42,7 @@ const executives = [
   {
     id: 6,
     name: 'Afolabi Abimbola',
-    designation: 'Team Lead Agro Allied',
+    designation: 'Head, Business Development',
     image: '/assets/images/banner/executive6.0.png',
     email: 'afolabi@kaizenng.com',
     bio: "Afolabi's career is positively identified by healthy achievement which spreads across well recognized financial institutions which include banking sectors and stock brokerage firm. He started his career with Eco Bank as Portfolio Manager and International Fund for Agric. Development as Technical Financial Advisor for rural farmers.\n\nFor being successful at these initial positions, he was identified by Advans La Fayette Microfinance Bank to be their country Loan Manager and to establish Agricultural loan portfolio which he accepted and established successfully. He also managed a huge loan portfolio reporting directly to head of business development. He worked as Team Lead for loan (Micro/SME) managers reporting to Regional Sales Manager at Renmoney MFBank.\n\nAdditionally, he worked as Stockbroker / Retail Sales Manager with Coronation Securities Limited which made him got a standout performance for bringing-in one billion naira for a single transaction in the history of the organization. He solidified his leadership path, leading directly to his appointment as Team-lead in Business Development Department at Kaizen Microfinance Bank."

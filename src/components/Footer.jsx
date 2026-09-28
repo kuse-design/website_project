@@ -73,7 +73,7 @@ export default function Footer(){
                 <div className="widget-content mb_25">
                   <ul className="links-list clearfix">
                     <li><Link to="/about">About Us<i className="flaticon-next"></i></Link></li>
-                    <li><Link to="/team">Leadership<i className="flaticon-next"></i></Link></li>
+                    <li><Link to="/team">Executive Management<i className="flaticon-next"></i></Link></li>
                     <li><Link to="/careers">Careers<i className="flaticon-next"></i></Link></li>
                   </ul>
                 </div>
@@ -143,6 +143,7 @@ export default function Footer(){
             </div>
             <ul className="footer-nav clearfix">
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/whistleblower">Whistleblower</Link></li>
               <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
             </ul>
           </div>

@@ -17,6 +17,13 @@ const LOAN_TYPES = [
     rate: { value: '3.5%' }
   },
   {
+    id: 'salary',
+    label: 'Kaizen Salary Loan',
+    amount: { min: 50000, max: 25000000, default: 1000000, labels: ['₦50,000', '₦25 Million'] },
+    term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
+    rate: { value: '3.5%' }
+  },
+  {
     id: 'asset',
     label: 'Kaizen Asset Loan',
     amount: { min: 25000000, max: 500000000, default: 50000000, labels: ['₦25 Million', '₦500 Million'] },
@@ -227,7 +234,6 @@ export default function LoanCalculator() {
                         <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-32.png" alt="" /></div>
                         <h5>Monthly Repayment</h5>
                         <h3>₦{fmt(emi)}</h3>
-                        <div className="btn-box"><a href="https://www.klickcash.ng/kaizen" target="_blank" rel="noopener noreferrer" className="theme-btn"><span>Apply Now</span></a></div>
                       </div>
                       <div className="interest-amount">
                         <div className="single-amount">
@@ -240,6 +246,9 @@ export default function LoanCalculator() {
                           <h5>Total Payment</h5>
                           <span>₦{fmt(totalPayment)}</span>
                         </div>
+                      </div>
+                      <div className="btn-box" style={{ marginTop: '20px', textAlign: 'center' }}>
+                        <a href="https://www.klickcash.ng/kaizen" target="_blank" rel="noopener noreferrer" className="theme-btn"><span>Apply Now</span></a>
                       </div>
                     </div>
                   </div>

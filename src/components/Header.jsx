@@ -49,7 +49,7 @@ function NavigationItems({ isMobile = false, onNavigate = () => {} }) {
         )}
         <ul style={{ display: isMobile ? (isDropdownOpen('about') ? 'block' : 'none') : undefined }}>
           <li><Link to="/about" onClick={onNavigate}>About Us</Link></li>
-          <li><Link to="/team" onClick={onNavigate}>Leadership</Link></li>
+          <li><Link to="/team" onClick={onNavigate}>Executive Management</Link></li>
           <li><Link to="/careers" onClick={onNavigate}>Careers</Link></li>
           <li><Link to="/faq" onClick={onNavigate}>Faq’s</Link></li>
         </ul>
@@ -74,6 +74,7 @@ function NavigationItems({ isMobile = false, onNavigate = () => {} }) {
               <li><Link to="/kaizen-enterprise" onClick={onNavigate}>Kaizen Enterprise Loan</Link></li>
               <li><Link to="/kaizen-asset" onClick={onNavigate}>Kaizen Asset Loan</Link></li>
               <li><Link to="/kaizen-micro" onClick={onNavigate}>Kaizen Micro Loan</Link></li>
+              <li><Link to="/kaizen-salary" onClick={onNavigate}>Kaizen Salary Loan</Link></li>
             </ul>
           </li>
           <li className={`dropdown ${isDropdownOpen('cards') ? 'open' : ''}`}>
@@ -215,11 +216,7 @@ export default function Header() {
                           <div className="inner-box">
                             <div className="form-group">
                               <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-86.png" alt="" /></div>
-                              <input type="text" name="location" placeholder="Current Location" />
-                            </div>
-                            <div className="text">[or]</div>
-                            <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Lagos" />
+                              <input type="text" name="location" placeholder="154 Awolowo Road, Ikoyi, Lagos, 106104" readOnly />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
@@ -232,11 +229,7 @@ export default function Header() {
                           <div className="inner-box">
                             <div className="form-group">
                               <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-86.png" alt="" /></div>
-                              <input type="text" name="location" placeholder="Current Location" />
-                            </div>
-                            <div className="text">[or]</div>
-                            <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Lagos" />
+                              <input type="text" name="location" placeholder="154 Awolowo Road, Ikoyi, Lagos, 106104" readOnly />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
@@ -310,11 +303,7 @@ export default function Header() {
                           <div className="inner-box">
                             <div className="form-group">
                               <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-86.png" alt="" /></div>
-                              <input type="text" name="location" placeholder="Current Location" />
-                            </div>
-                            <div className="text">[or]</div>
-                            <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Lagos" />
+                              <input type="text" name="location" placeholder="154 Awolowo Road, Ikoyi, Lagos, 106104" readOnly />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
@@ -327,11 +316,7 @@ export default function Header() {
                           <div className="inner-box">
                             <div className="form-group">
                               <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-86.png" alt="" /></div>
-                              <input type="text" name="location" placeholder="Current Location" />
-                            </div>
-                            <div className="text">[or]</div>
-                            <div className="form-group">
-                              <input type="text" name="city" placeholder="City name: Lagos" />
+                              <input type="text" name="location" placeholder="154 Awolowo Road, Ikoyi, Lagos, 106104" readOnly />
                             </div>
                             <div className="link-box">
                               <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">

@@ -3,33 +3,29 @@ import PageTitle from '../components/sections/PageTitle'
 import LoanCalculator from '../components/sections/LoanCalculator'
 
 const features = [
-  '6 months of working in a structured organization',
-  'Loan amount between ₦100,000 – ₦5,000,000',
-  'Competitive Interest rate',
-  'Loan period: 30 – 365 days',
-  'Direct debit Mandate for collection of repayment'
+  'The organizations sign an indemnity to ensure collection of the loan repayment from the employees account from source for onward remittance to the Bank',
+  'The Parent Organization must have an account with the Bank',
+  'This is open ONLY to Private Organizations',
+  'Minimum work force – 5 employees',
+  'Loan period: 30 – 180 days',
+  'Interest: 4% flat',
+  'Attractive fee'
 ]
 
 const requirements = [
-  'Employment Letter/Contract of Employment',
-  'Passport photographs (2)',
-  '6 months statement of account',
-  'Valid means of identification and utility bill',
-  'Place of work identification / Email verification',
-  'Guarantor(s)'
+  'Letter of introduction of the employee from the Organization, which must include the staff salary',
+  '6 Months statement of account',
+  'Employment Letter / Contract of employment',
+  'Passport Photograph and utility Bill',
+  'Valid means of identification / Work Identification',
+  'Guarantors (Internal and External)'
 ]
 
-const guarantorRequirements = [
-  'Passport photograph and valid means of identification',
-  'Utility bill',
-  'Evidence of place or work/business'
-]
-
-export default function KaizenPersonalLoanPage(){
+export default function KaizenSalaryLoanPage(){
   return (
     <>
     <div className="boxed_wrapper">
-        <PageTitle title={"Kaizen Personal Loan"} crumbs={[{ label: "Apply Now", to: "/kaizen-personal" }]} />
+        <PageTitle title={"Kaizen Salary Loan"} crumbs={[{ label: "Apply Now", to: "/kaizen-salary" }]} />
 
         <section className="loan-features sec-pad">
           <div className="auto-container">
@@ -55,7 +51,7 @@ export default function KaizenPersonalLoanPage(){
         <section className="loan-requirements sec-pad-2">
           <div className="auto-container">
             <div className="row clearfix">
-              <div className="col-lg-6 col-md-12 col-sm-12 requirements-column">
+              <div className="col-lg-12 col-md-12 col-sm-12 requirements-column">
                 <div className="requirements-card">
                   <div className="sec-title">
                     <span className="sub-title">Requirements</span>
@@ -63,22 +59,6 @@ export default function KaizenPersonalLoanPage(){
                   </div>
                   <ul className="requirements-list">
                     {requirements.map((req, index) => (
-                      <li key={index}>
-                        <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-16.png" alt="" /></div>
-                        <span>{req}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12 guarantor-column">
-                <div className="requirements-card guarantor-card">
-                  <div className="sec-title">
-                    <span className="sub-title">Guarantor Requirements</span>
-                    <h2>Guarantors Requirements</h2>
-                  </div>
-                  <ul className="requirements-list">
-                    {guarantorRequirements.map((req, index) => (
                       <li key={index}>
                         <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-16.png" alt="" /></div>
                         <span>{req}</span>

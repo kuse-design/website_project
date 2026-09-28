@@ -296,15 +296,6 @@ export default function HomePage() {
                             </button>
                           </div>
                         </div>
-                        <div className="lower-text">
-                          <div className="icon-box">
-                            <i className="flaticon-sparkle"></i>
-                          </div>
-                          <h5>
-                            Find the Perfect <Link to="/">FD Option</Link> for
-                            Your Needs.
-                          </h5>
-                        </div>
                       </div>
                     </div>
                   </div>
