@@ -90,7 +90,7 @@ export default function VerveCardPage(){
   ]
 
   const fees = [
-    { label: "Card Issuance", amount: "₦1,000 (generic)" },
+    { label: "Card Issuance", amount: "₦2,000 (generic)" },
     { label: "PIN Reissue", amount: "Free" },
     { label: "POS & Web Transactions", amount: "Free" }
   ]
@@ -107,7 +107,7 @@ export default function VerveCardPage(){
   return (
     <>
       <div className="boxed_wrapper">
-        <PageTitle title={"Verve Prepaid Card"} crumbs={[{ label: "Cards", to: "/card-details-verve" }, { label: "Verve Prepaid Card" }]} />
+        <PageTitle title={"Verve Card"} crumbs={[{ label: "Cards", to: "/card-details-verve" }, { label: "Verve Card" }]} />
 
         <section className="card-details sec-pad">
           <div className="auto-container">
@@ -116,7 +116,7 @@ export default function VerveCardPage(){
                 <div className="cards-sidebar pt_110 pb_120">
                   <div className="contact-widget">
                     <div className="inner-box" style={{backgroundImage: 'url(/assets/images/banner/holdingcard.webp)'}}>
-                      <h3>Get Your Verve Prepaid Card</h3>
+                      <h3>Get Your Verve Card</h3>
                       <span className="text">Issued within 24 Hours</span>
                       <Link to="/contact" className="theme-btn btn-style-two"><span>Apply Now</span></Link>
                     </div>
@@ -131,8 +131,8 @@ export default function VerveCardPage(){
                   <div className="content-section mb_70">
                     <div className="text-box mb_45">
                       <h6>About This Card</h6>
-                      <h2>Verve Prepaid Card</h2>
-                      <p>Verve Prepaid is a re-loadable naira-denominated domestic card that requires no banking relationship with cardholders by way of account opening and maintenance.</p>
+                      <h2>Verve Card</h2>
+                      <p>Verve card is a re-loadable naira-denominated domestic card that requires no banking relationship with cardholders by way of account opening and maintenance.</p>
                       <p>It is acceptable for payment of goods & services on all payment channels – domestic sites, POS and ATM in Nigeria. Simply top-up your card with a desired amount and you can use it on all payment channels.</p>
                     </div>
 
@@ -217,7 +217,7 @@ export default function VerveCardPage(){
                   <div className="content-section mb_70">
                     <div className="text-box mb_35">
                       <h2>Who Can Apply?</h2>
-                      <p>The Verve Prepaid Card is accessible to a wide range of individuals and organizations.</p>
+                      <p>The Verve Card is accessible to a wide range of individuals and organizations.</p>
                     </div>
                     <div className="row clearfix">
                       <div className="col-lg-6 col-md-12 col-sm-12">

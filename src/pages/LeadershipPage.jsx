@@ -19,7 +19,7 @@ export default function LeadershipPage(){
         <section className="our-leaders-section">
           <div className="our-leaders-container">
             <header className="our-leaders-header">
-              <h2 className="our-leaders-title">Our Leaders</h2>
+              <h2 className="our-leaders-title">Our Executives</h2>
             </header>
             <ul className="our-leaders-grid" role="list">
               {executives.map((leader) => (

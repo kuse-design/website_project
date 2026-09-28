@@ -2,7 +2,7 @@ const executives = [
   {
     id: 1,
     name: 'Omotade Odunowo',
-    designation: 'Managing Director',
+    designation: 'CEO/Managing Director',
     image: '/assets/images/banner/executive1.webp',
     email: 'omotade@kaizenng.com',
     bio: "Omotade is an innovative and results-oriented Managing Director with a proven track record of transforming start-ups into multi-billion-dollar enterprises. Recognized as one of Nigeria's top 50 CEOs and recipient of multiple awards for operational excellence, business transformation, and risk management. Over 20 years of experience leading high-impact initiatives across fintech, e-commerce, banking, enterprise risk management, privacy, data protection, and network security. Adept at driving strategic growth, optimizing operations, and navigating complex regulatory landscapes to ensure compliance and sustainable business performance. Her core competencies lie in Business Growth & Transformation, Strategic Leadership & Execution, Financial Performance & Profitability, Enterprise Risk Management, Regulatory & Compliance Frameworks, Business Visioning & Market Expansion, Strategic Partnership & Stakeholder Engagement, Project & Operations Management, Data Security & Privacy Governance, and ERP Systems Development & Implementation."
@@ -25,9 +25,9 @@ const executives = [
   },
   {
     id: 4,
-    name: 'Benson Roy',
+    name: 'Roy Benson ',
     designation: 'Financial Controller',
-    image: '/assets/images/banner/executive4.0.webp',
+    image: '/assets/images/banner/executive4.2.webp',
     email: 'benson@kaizenng.com',
     bio: "Roy serves as the Financial Controller at Kaizen Microfinance Bank. In this capacity, he leads the company's financial strategy and oversees risk management, ensuring robust governance and long-term value creation.\n\nWith more than a decade of professional experience spanning banking operations, credit administration, risk management, internal audit, and financial controls, Roy has held senior roles at ClearPay, First Generation Mortgage Bank, and Aso Savings and Loans Plc. His diverse background equips him to drive prudent financial management while aligning risk oversight with organizational growth objectives.\n\nA Chartered Accountant, he holds a Bachelor's degree in Accounting, an advanced degree in Business Administration, and a Financial Management credential from the London School of Business Administration. He is certified in Financial Modelling & Valuation, Business Intelligence, Risk Management, Credit Analysis, and ESG, and is currently pursuing a Ph.D. in Business Administration to further deepen his expertise in corporate finance and strategic management."
   },
@@ -41,7 +41,7 @@ const executives = [
   },
   {
     id: 6,
-    name: 'Afolabi Abimbola',
+    name: 'Abimbola Afolabi',
     designation: 'Head, Business Development',
     image: '/assets/images/banner/executive6.0.webp',
     email: 'afolabi@kaizenng.com',

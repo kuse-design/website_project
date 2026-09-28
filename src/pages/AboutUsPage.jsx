@@ -206,27 +206,7 @@ export default function AboutUsPage(){
             <div className="row clearfix">
               <div className="col-lg-6 col-md-12 col-sm-12 image-column">
                 <div className="image-box">
-                  <figure className="image"><img loading="lazy" src="/assets/images/resource/chooseus-1.jpg" alt="" /></figure>
-                  <div className="chart-box centred">
-                    <h6> Financial Growth</h6>
-                    <div className="chart mb_12"><img loading="lazy" src="/assets/images/icons/chart-1.png" alt="" /></div>
-                    <ul className="option-list mb_7 clearfix">
-                      <li>
-                        <div className="check-box">
-                          <input className="check" type="radio" id="checkbox1" name="same" checked="" />
-                          <label htmlFor="checkbox1">Option&nbsp;1</label>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="check-box">
-                          <input className="check" type="radio" id="checkbox2" name="same" />
-                          <label htmlFor="checkbox2">Option&nbsp;2</label>
-                        </div>
-                      </li>
-                    </ul>
-                    <span className="text">Growth</span>
-                    <span className="price">₦42,467</span>
-                  </div>
+                  <figure className="image"><img loading="lazy" src="/assets/images/location1.1.png" alt="Kaizen Microfinance Bank" /></figure>
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">

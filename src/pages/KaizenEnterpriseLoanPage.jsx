@@ -53,7 +53,6 @@ export default function KaizenEnterpriseLoanPage(){
             </div>
             <div className="sec-title centred mb_30">
               <span className="sub-title">Loan Types</span>
-              <h2>Types</h2>
             </div>
             <div className="row clearfix types-grid">
               {types.map((type, index) => (
@@ -74,7 +73,6 @@ export default function KaizenEnterpriseLoanPage(){
           <div className="auto-container">
             <div className="sec-title centred">
               <span className="sub-title">Loan Features</span>
-              <h2>Features</h2>
             </div>
             <div className="row clearfix features-grid">
               {features.map((feature, index) => (
@@ -98,7 +96,6 @@ export default function KaizenEnterpriseLoanPage(){
                 <div className="requirements-card">
                   <div className="sec-title">
                     <span className="sub-title">Requirements</span>
-                    <h2>Requirement</h2>
                   </div>
                   <ul className="requirements-list">
                     {requirements.map((req, index) => (
@@ -114,7 +111,6 @@ export default function KaizenEnterpriseLoanPage(){
                 <div className="requirements-card guarantor-card">
                   <div className="sec-title">
                     <span className="sub-title">Guarantor Requirements</span>
-                    <h2>Guarantors Requirements</h2>
                   </div>
                   <ul className="requirements-list">
                     {guarantorRequirements.map((req, index) => (
