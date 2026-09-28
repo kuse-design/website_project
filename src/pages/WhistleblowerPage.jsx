@@ -10,7 +10,7 @@ export default function WhistleblowerPage() {
         <PageTitle title={"Whistleblower Policy"} crumbs={["Legal"]} />
 
         <section className="privacy-section sec-pad">
-          <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-46.png)' }}></div>
+          <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-46.webp)' }}></div>
           <div className="auto-container">
             <div className="privacy-policy-card">
               <p className="company-line">Kaizen Microfinance Bank Limited</p>

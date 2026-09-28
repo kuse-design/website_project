@@ -8,7 +8,7 @@ export default function LeadershipPage(){
     <>
       <div className="boxed_wrapper">
         <section className="leadership-banner">
-          <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-4.png)' }}></div>
+          <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-4.webp)' }}></div>
           <div className="auto-container">
             <div className="content-box">
               <h1>Executive Management</h1>

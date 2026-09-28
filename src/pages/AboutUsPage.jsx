@@ -18,7 +18,7 @@ export default function AboutUsPage(){
                     <div className="row clearfix">
                         <div className="col-lg-6 col-md-12 col-sm-12 title-column">
                             <div className="title-box p_relative">
-                                <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-41.png)'}}></div>
+                                <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-41.webp)'}}></div>
                                 <div className="sec-title">
                                     <span className="sub-title">Our Values</span>
                                     <h2>Explore Our Core Values &amp; Commitments</h2>
@@ -62,8 +62,8 @@ export default function AboutUsPage(){
                             <div className="left-content">
                                 <figure className="image-box"><img loading="lazy" src="/assets/images/banner/aboutus.jpg" alt="About Kaizenbank" /></figure>
                                 <div className="content-box">
-                                    <div className="bg-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-42.png)'}}></div>
-                                    <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-43.png)'}}></div>
+                                    <div className="bg-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-42.webp)'}}></div>
+                                    <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-43.webp)'}}></div>
                                     <h2>29<span>+</span></h2>
                                     <h6>Years of experience in the Banking Sector.</h6>
                                     <Link to="/about"><i className="flaticon-right-arrow"></i>Our History</Link>
@@ -155,7 +155,7 @@ export default function AboutUsPage(){
                     <div className="col-lg-4 col-md-6 col-sm-12 statements-block">
                         <div className="statements-block-two">
                             <div className="inner-box">
-                                <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-44.png)'}}></div>
+                                <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-44.webp)'}}></div>
                                 <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-201.png" alt="" /></div>
                                 <h3>Our Core Values</h3>
                                 <ul className="list-item clearfix">
@@ -206,7 +206,7 @@ export default function AboutUsPage(){
                             <Carousel className="two-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
                                 <div className="award-block-one">
                                     <div className="inner-box">
-                                        <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-9.png)'}}></div>
+                                        <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-9.webp)'}}></div>
                                         <h3>Community <br />Empowerment</h3>
                                         <div className="icon-box"><img loading="lazy" src="/assets/images/icons/award-1.png" alt="" /></div>
                                         <p>Financial inclusion for underserved communities.</p>
@@ -215,7 +215,7 @@ export default function AboutUsPage(){
                                 </div>
                                 <div className="award-block-one">
                                     <div className="inner-box">
-                                        <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-9.png)'}}></div>
+                                        <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-9.webp)'}}></div>
                                         <h3>Customer <br />Satisfaction</h3>
                                         <div className="icon-box"><img loading="lazy" src="/assets/images/icons/award-2.png" alt="" /></div>
                                         <p>Accessible, reliable, and customer-focused banking.</p>
@@ -231,7 +231,7 @@ export default function AboutUsPage(){
 
         {/* Why Choose Us */}
         <section className="chooseus-section sec-pad">
-            <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-45.png)'}}></div>
+            <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-45.webp)'}}></div>
             <div className="auto-container">
                 <div className="sec-title light centred">
                     <span className="sub-title">Why Choose Us</span>

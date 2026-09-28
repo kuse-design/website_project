@@ -34,7 +34,7 @@ export default function Footer(){
 
   return (
     <footer className="main-footer">
-      <div className="pattern-layer" style={{backgroundImage:'url(/assets/images/shape/shape-4.png)'}}></div>
+      <div className="pattern-layer" style={{backgroundImage:'url(/assets/images/shape/shape-4.webp)'}}></div>
       <div className="widget-section">
         <div className="auto-container">
           <div className="row clearfix">
@@ -127,7 +127,7 @@ export default function Footer(){
           <div className="bottom-inner">
             <div className="licenses">
               <img loading="lazy" src="/assets/images/banner/cbn.webp" alt="CBN" />
-              <img loading="lazy" src="/assets/images/banner/ndic.png" alt="NDIC" />
+              <img loading="lazy" src="/assets/images/banner/ndic.webp" alt="NDIC" />
             </div>
             <div className="social-box">
               <span>Follow Us On</span>

@@ -233,7 +233,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -307,7 +307,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -391,7 +391,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -475,7 +475,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -559,7 +559,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -643,7 +643,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -727,7 +727,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -811,7 +811,7 @@ export default function HomePage() {
                         <figure className="image">
                           <img
                             loading="lazy"
-                            src="/assets/images/banner/atm machine.png"
+                            src="/assets/images/banner/atm machine.webp"
                             alt=""
                           />
                         </figure>
@@ -896,7 +896,7 @@ export default function HomePage() {
         <section className="custom-banking sec-pad">
           <div
             className="pattern-layer"
-            style={{ backgroundImage: "url(/assets/images/shape/shape-4.png)" }}
+            style={{ backgroundImage: "url(/assets/images/shape/shape-4.webp)" }}
           ></div>
           <div className="auto-container">
             <div className="title-box">
@@ -922,7 +922,7 @@ export default function HomePage() {
               <figure className="support-image">
                 <img
                   loading="lazy"
-                  src="/assets/images/banner/support1.png"
+                  src="/assets/images/banner/support1.webp"
                   alt=""
                 />
               </figure>
@@ -1115,7 +1115,7 @@ export default function HomePage() {
         <section className="creditcard-section sec-pad">
           <div
             className="pattern-layer"
-            style={{ backgroundImage: "url(/assets/images/shape/shape-4.png)" }}
+            style={{ backgroundImage: "url(/assets/images/shape/shape-4.webp)" }}
           ></div>
           <span className="big-text">
             Spending <br />
@@ -1128,7 +1128,7 @@ export default function HomePage() {
                   <div
                     className="shape"
                     style={{
-                      backgroundImage: "url(/assets/images/shape/shape-3.png)",
+                      backgroundImage: "url(/assets/images/shape/shape-3.webp)",
                     }}
                   ></div>
                   <figure className="card-box">

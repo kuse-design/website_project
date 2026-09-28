@@ -3,7 +3,7 @@ import React from 'react'
 export default function PerformanceSection() {
   return (
     <section className="performance-section">
-            <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-38.png)'}}></div>
+            <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-38.webp)'}}></div>
             <div className="auto-container">
                 <div className="row clearfix">
                     <div className="col-lg-6 col-md-12 col-sm-12 content-column">
@@ -29,7 +29,7 @@ export default function PerformanceSection() {
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 progress-column">
                         <div className="progress-content p_relative ml_100">
-                            <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-39.png)'}}></div>
+                            <div className="shape" style={{backgroundImage: 'url(/assets/images/shape/shape-39.webp)'}}></div>
                             <div className="progress-box">
                                 <div className="single-progress">
                                     <h5>Starting Balance</h5>

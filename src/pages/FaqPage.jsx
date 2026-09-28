@@ -42,7 +42,7 @@ export default function FaqPage(){
     <div className="boxed_wrapper faq-dark">
       <PageTitle title={"Faq's"} crumbs={[{ label: "About", to: "/about" }]} />
       <section className="faq-section sec-pad">
-        <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-46.png)'}}></div>
+        <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/shape/shape-46.webp)'}}></div>
         <div className="auto-container">
           <div className="sec-title centred">
             <span className="sub-title">Faq's</span>

@@ -31,7 +31,7 @@ export default function OverviewSection({ h2 = 'Savings Accounts', eligibility =
               <div className="inner-box">
                 <h3>{eligibility}</h3>
                 <div className="inner-content clearfix">
-                  <div className="shape" style={{ backgroundImage: 'url(/assets/images/shape/shape-36.png)' }}></div>
+                  <div className="shape" style={{ backgroundImage: 'url(/assets/images/shape/shape-36.webp)' }}></div>
                   <div className="shape-2"></div>
                   <div className="single-item">
                     <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-174.png" alt="" /></div>

@@ -12,7 +12,7 @@ export default function PageTitle({ title, crumbs, heading = 'h1' }) {
   const Tag = heading
   return (
     <section className="page-title">
-      <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-4.png)' }}></div>
+      <div className="pattern-layer" style={{ backgroundImage: 'url(/assets/images/shape/shape-4.webp)' }}></div>
       <div className="auto-container">
         <div className="content-box">
           <Tag>{title}</Tag>

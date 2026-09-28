@@ -240,7 +240,7 @@ export default function PartnersPage() {
                 <div
                   className="shape"
                   style={{
-                    backgroundImage: "url(/assets/images/shape/shape-20.png)",
+                    backgroundImage: "url(/assets/images/shape/shape-20.webp)",
                   }}
                 ></div>
                 <div
