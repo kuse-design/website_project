@@ -4,35 +4,35 @@ import { Link } from 'react-router-dom'
 const LOAN_TYPES = [
   {
     id: 'personal',
-    label: 'Kaizen Personal Loan',
+    label: 'Personal Loan',
     amount: { min: 50000, max: 5000000, default: 500000, labels: ['₦50,000', '₦5 Million'] },
     term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'enterprise',
-    label: 'Kaizen Enterprise Loan',
+    label: 'Enterprise Loan',
     amount: { min: 50000, max: 25000000, default: 1000000, labels: ['₦50,000', '₦25 Million'] },
     term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'salary',
-    label: 'Kaizen Salary Loan',
+    label: 'Salary Loan',
     amount: { min: 50000, max: 25000000, default: 1000000, labels: ['₦50,000', '₦25 Million'] },
     term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'asset',
-    label: 'Kaizen Asset Loan',
+    label: 'Asset Loan',
     amount: { min: 25000000, max: 500000000, default: 50000000, labels: ['₦25 Million', '₦500 Million'] },
     term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
   {
     id: 'micro',
-    label: 'Kaizen Micro Loan',
+    label: 'Micro Loan',
     amount: { min: 50000, max: 5000000, default: 200000, labels: ['₦50,000', '₦5 Million'] },
     term: { min: 1, max: 12, default: 6, labels: ['1 Month', '12 Months'] },
     rate: { value: '4%' }
