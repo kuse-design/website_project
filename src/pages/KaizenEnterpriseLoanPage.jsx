@@ -1,7 +1,6 @@
 import React from 'react'
 import PageTitle from '../components/sections/PageTitle'
 import LoanCalculator from '../components/sections/LoanCalculator'
-import { Link } from 'react-router-dom'
 
 const types = [
   'LPO financing',
@@ -46,15 +45,15 @@ export default function KaizenEnterpriseLoanPage(){
 
         <section className="loan-types sec-pad">
           <div className="auto-container">
-            <div className="section-header-row">
-              <div className="sec-title">
-                <span className="sub-title">Loan Types</span>
-                <h2>Types</h2>
-              </div>
-              <div className="header-actions">
-                <Link to="/kaizen-enterprise" className="theme-btn btn-style-two"><span>Explore</span></Link>
-                <Link to="/contact" className="theme-btn"><span>Apply Now</span></Link>
-              </div>
+            <div className="loan-header centred mb_30">
+              <span className="loan-header-label">Explore And Apply Now</span>
+            </div>
+            <div className="loan-description centred mb_50">
+              <p>This is a loan for business owners, small and medium business owners as a form working capital, for augmentation of business resources. They are loans between the sums ₦50,000 - ₦25Million.</p>
+            </div>
+            <div className="sec-title centred mb_30">
+              <span className="sub-title">Loan Types</span>
+              <h2>Types</h2>
             </div>
             <div className="row clearfix types-grid">
               {types.map((type, index) => (

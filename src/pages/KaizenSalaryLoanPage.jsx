@@ -2,8 +2,15 @@ import React from 'react'
 import PageTitle from '../components/sections/PageTitle'
 import LoanCalculator from '../components/sections/LoanCalculator'
 
+const types = [
+  'Salary Advance',
+  'Group Salary Loan',
+  'Employee Loan',
+  'Payroll Loan'
+]
+
 const features = [
-  'The organizations sign an indemnity to ensure collection of the loan repayment from the employees account from source for onward remittance to the Bank',
+  'The organization signs an indemnity to ensure collection of the loan repayment from the employees account from source for onward remittance to the Bank',
   'The Parent Organization must have an account with the Bank',
   'This is open ONLY to Private Organizations',
   'Minimum work force – 5 employees',
@@ -26,6 +33,33 @@ export default function KaizenSalaryLoanPage(){
     <>
     <div className="boxed_wrapper">
         <PageTitle title={"Kaizen Salary Loan"} crumbs={[{ label: "Apply Now", to: "/kaizen-salary" }]} />
+
+        <section className="loan-types sec-pad">
+          <div className="auto-container">
+            <div className="loan-header centred mb_30">
+              <span className="loan-header-label">Explore And Apply Now</span>
+            </div>
+            <div className="loan-description centred mb_50">
+              <p>This loan is designed for groups of employees of structured organizations that have need for organized loan facilities.</p>
+            </div>
+            <div className="sec-title centred mb_30">
+              <span className="sub-title">Loan Types</span>
+              <h2>Types</h2>
+            </div>
+            <div className="row clearfix types-grid">
+              {types.map((type, index) => (
+                <div key={index} className="col-lg-3 col-md-6 col-sm-12 type-block">
+                  <div className="type-item">
+                    <div className="icon-box">
+                      <img loading="lazy" src="/assets/images/icons/icon-16.png" alt="" />
+                    </div>
+                    <p>{type}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="loan-features sec-pad">
           <div className="auto-container">

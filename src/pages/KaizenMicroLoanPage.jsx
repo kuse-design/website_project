@@ -3,10 +3,10 @@ import PageTitle from '../components/sections/PageTitle'
 import LoanCalculator from '../components/sections/LoanCalculator'
 
 const types = [
-  'LPO financing',
-  'Overdraft facility',
-  'Term Loan',
-  'Invoice Discounting'
+  'Micro Business Loan',
+  'Market Trader Loan',
+  'Artisan Loan',
+  'Petty Trader Loan'
 ]
 
 const features = [
@@ -40,7 +40,13 @@ export default function KaizenMicroLoanPage(){
 
         <section className="loan-types sec-pad">
           <div className="auto-container">
-            <div className="sec-title centred">
+            <div className="loan-header centred mb_30">
+              <span className="loan-header-label">Explore And Apply Now</span>
+            </div>
+            <div className="loan-description centred mb_50">
+              <p>These are loans designed for small scale businesses and the Loan amount is between the sum of ₦50,000 – ₦5Million.</p>
+            </div>
+            <div className="sec-title centred mb_30">
               <span className="sub-title">Loan Types</span>
               <h2>Types</h2>
             </div>

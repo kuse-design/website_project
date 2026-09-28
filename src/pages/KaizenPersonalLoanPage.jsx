@@ -2,6 +2,13 @@ import React from 'react'
 import PageTitle from '../components/sections/PageTitle'
 import LoanCalculator from '../components/sections/LoanCalculator'
 
+const types = [
+  'Salary Advance',
+  'Personal Loan',
+  'Consumer Loan',
+  'Emergency Loan'
+]
+
 const features = [
   '6 months of working in a structured organization',
   'Loan amount between ₦100,000 – ₦5,000,000',
@@ -30,6 +37,33 @@ export default function KaizenPersonalLoanPage(){
     <>
     <div className="boxed_wrapper">
         <PageTitle title={"Kaizen Personal Loan"} crumbs={[{ label: "Apply Now", to: "/kaizen-personal" }]} />
+
+        <section className="loan-types sec-pad">
+          <div className="auto-container">
+            <div className="loan-header centred mb_30">
+              <span className="loan-header-label">Explore And Apply Now</span>
+            </div>
+            <div className="loan-description centred mb_50">
+              <p>These are loans designed for individuals that are gainfully employed, that work in a structured organization and get remuneration monthly.</p>
+            </div>
+            <div className="sec-title centred mb_30">
+              <span className="sub-title">Loan Types</span>
+              <h2>Types</h2>
+            </div>
+            <div className="row clearfix types-grid">
+              {types.map((type, index) => (
+                <div key={index} className="col-lg-3 col-md-6 col-sm-12 type-block">
+                  <div className="type-item">
+                    <div className="icon-box">
+                      <img loading="lazy" src="/assets/images/icons/icon-16.png" alt="" />
+                    </div>
+                    <p>{type}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="loan-features sec-pad">
           <div className="auto-container">
