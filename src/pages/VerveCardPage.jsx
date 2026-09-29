@@ -5,87 +5,87 @@ import { Link } from 'react-router-dom'
 export default function VerveCardPage(){
   const faqs = [
     {
-      question: "How do I apply for my Verve Prepaid Card?",
-      answer: "Visit the nearest Kaizen MFB branch of choice. For Corporate requests, please contact your account officer."
+      question: "Can my Verve Card work on the web?",
+      answer: "Yes, but only on websites that display the Interswitch or Verve acceptance mark."
     },
     {
-      question: "Must I have a Kaizen MFB account before I can apply for the Verve Prepaid Card?",
-      answer: "Verve Prepaid Card can be purchased by existing customers and non-customers of the bank. Simply provide your minimum KYC details i.e. Name, Address and Phone number and provide a valid means of ID or Utility bill."
+      question: "Where can I use my Verve Card?",
+      answer: "Your card is accepted at all payment channels and bank branches connected to the Interswitch network in Nigeria, and wherever the Interswitch or Verve logo is displayed."
     },
     {
-      question: "How do I fund my Verve Prepaid Card?",
-      answer: "You can fund your card via pay direct at any Kaizen MFB branch or other banks of choice, you can also fund your card via Quick teller online using your debit card to transfer funds to the card number."
+      question: "How do I activate my Verve Card?",
+      answer: "You can activate your card by setting your preferred PIN at our Customer Service Desk before you leave the branch, or by changing your PIN at any Kaizen MFB ATM."
     },
     {
-      question: "How do I check my Verve Prepaid Card balance?",
-      answer: "Card balance can be checked on the ATM."
+      question: "What is my PIN?",
+      answer: "Your PIN, or Personal Identification Number, is the four-digit number known only to you. It is used to authorise transactions at ATMs and other payment devices."
     },
     {
-      question: "How can I get my Verve Prepaid Card Statement?",
-      answer: "Your Verve Prepaid card statement will be made available to you on request at our branches or Kaizen Contact."
+      question: "Can I use my Verve Card to shop on international websites?",
+      answer: "The Verve Card is a domestic card and works only on websites bearing the Interswitch or Verve acceptance mark."
     },
     {
-      question: "Can the Verve Prepaid Card be used outside Nigeria?",
-      answer: "No, the Verve Prepaid Card is a purely domestic card."
+      question: "How do I shop online with my card?",
+      answer: "Choose the item you wish to purchase, proceed to checkout, then enter your card number, expiry date, the CVV printed beside the signature panel, and your PIN using the secure keypad on screen."
     },
     {
-      question: "Can the card be linked to a customer's existing accounts?",
-      answer: "Cardholder will also be required to fulfil full KYC requirement at his/her branch of request."
+      question: "How do I monitor transactions on my card?",
+      answer: "You can check every card transaction through Kaizen internet banking or the Kaizen mobile banking app."
     },
     {
-      question: "Is there any minimum card balance and annual maintenance fee?",
-      answer: "No minimum card balance / annual maintenance fee is applicable to card."
+      question: "What if I need help with my card?",
+      answer: "Our support team is available 24 hours a day for all card-related enquiries and complaints. Please reach out to us and we will assist."
     }
   ]
 
   const features = [
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Easy to Get & Use",
-      description: "No credit check is required to get the card. Simple onboarding process."
+      title: "Chip & PIN Secured",
+      description: "Built on chip and PIN technology for enhanced protection of your funds and stronger authentication at every terminal."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Fund Protection",
-      description: "Non-exposure of unintended funds and accounts for enhanced security."
+      title: "Naira Denominated",
+      description: "Issued and denominated in Naira, keeping your everyday spending simple and predictable."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Convenient Loading",
-      description: "Load funds at any Kaizen MFB branch or via Quickteller online."
+      title: "Wide Domestic Acceptance",
+      description: "Accepted wherever the Interswitch or Verve logo is displayed, across all connected payment channels in Nigeria."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Multi-Channel Usage",
-      description: "Make purchases online, pay bills, and access cash at ATMs nationwide."
+      title: "24/7 Account Monitoring",
+      description: "Track every card transaction through Kaizen internet banking and the Kaizen mobile banking app."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Secure Online Transactions",
-      description: "Extra protection for web-based transactions with Safe Token OTP."
+      title: "Always-On Support",
+      description: "Round-the-clock access to support for all card-related enquiries and complaints."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "24/7 Access",
-      description: "Round-the-clock access to your funds across all payment channels."
+      title: "One Card, Every Channel",
+      description: "Withdraw at ATMs and pay at POS terminals, on the web and through value-added services from a single card."
     }
   ]
 
   const benefits = [
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Access Control Ready",
-      description: "Can be enabled for access control with MI-fare chip embedded."
+      title: "Money on Your Terms",
+      description: "Access your funds 24 hours a day, without carrying cash or queuing at a branch."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Staff Identity & Payment",
-      description: "Ideal as a staff card for identity, access control, and payment of incentives."
+      title: "Value-Added Services",
+      description: "Pay bills, buy airtime and handle everyday payments directly from your card."
     },
     {
       icon: "/assets/images/icons/icon-195.png",
-      title: "Campus Cashless Payments",
-      description: "Drive cashless payments of goods and services on campus environments."
+      title: "Cardholder Discounts",
+      description: "Exclusive offers and discounts reserved for Verve cardholders at participating merchants nationwide."
     }
   ]
 
@@ -132,8 +132,7 @@ export default function VerveCardPage(){
                     <div className="text-box mb_45">
                       <h6>About This Card</h6>
                       <h2>Verve Card</h2>
-                      <p>Verve card is a re-loadable naira-denominated domestic card that requires no banking relationship with cardholders by way of account opening and maintenance.</p>
-                      <p>It is acceptable for payment of goods & services on all payment channels – domestic sites, POS and ATM in Nigeria. Simply top-up your card with a desired amount and you can use it on all payment channels.</p>
+                      <p>Your Kaizen Verve Card allows you to conveniently pay for goods and services because it is accepted by all payment channels and bank branches connected to the Interswitch network in Nigeria.</p>
                     </div>
 
                     <div className="image-box mb_50">
@@ -152,7 +151,7 @@ export default function VerveCardPage(){
                   <div className="content-section mb_70">
                     <div className="text-box mb_35">
                       <h2>Features</h2>
-                      <p>Enjoy a range of features designed for convenience, security, and everyday spending.</p>
+                      <p>Everything you need to spend and manage your money securely, on any channel.</p>
                     </div>
                     <div className="row clearfix">
                       {features.map((feature, index) => (
@@ -171,7 +170,7 @@ export default function VerveCardPage(){
                   <div className="content-section mb_70">
                     <div className="text-box mb_35">
                       <h2>Benefits</h2>
-                      <p>Additional advantages for corporate and institutional use cases.</p>
+                      <p>Reasons our Verve cardholders choose it for everyday transactions.</p>
                     </div>
                     <div className="row clearfix">
                       {benefits.map((benefit, index) => (

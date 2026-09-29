@@ -1,0 +1,694 @@
+/**
+ * CareersPage.css - Careers page ("Why Work With Us" + "Available Roles")
+ *
+ * Imported by CareersPage.jsx only, so every selector is namespaced under
+ * .why-join / .open-roles to avoid colliding with the shared template CSS in
+ * src/styles/. The page header is the shared PageTitle component, styled by
+ * src/styles/sections/pages.css.
+ *
+ * Palette comes from the theme tokens in src/styles/variables.css.
+ */
+
+/* ============================================================
+   1. WHY WORK WITH US
+   ============================================================ */
+
+.why-join {
+  position: relative;
+  background: var(--cream-color);
+  padding: 100px 0;
+}
+
+.why-join .sec-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-join .sec-title .sub-title {
+  padding-left: 0;
+}
+
+.why-join .sec-title .sub-title::before,
+.why-join .sec-title .sub-title::after {
+  display: none;
+}
+
+.why-join__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.why-join__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+
+.why-join__item .icon-box {
+  width: 74px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(201, 162, 39, 0.28);
+  margin-bottom: 6px;
+}
+
+.why-join__item .icon-box img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.why-join__item h5 {
+  font-family: var(--title-font);
+  font-size: 19px;
+  line-height: 26px;
+  color: var(--title-color);
+  margin: 0;
+}
+
+.why-join__item p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color);
+  margin: 0;
+  max-width: 250px;
+}
+
+/* ============================================================
+   2. AVAILABLE ROLES
+   ============================================================ */
+
+.open-roles {
+  padding: 100px 0 110px;
+  background: #fff;
+  scroll-margin-top: 110px;
+}
+
+.open-roles__header {
+  margin-bottom: 44px;
+}
+
+.open-roles__head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.open-roles__head-row .sec-title {
+  margin-bottom: 0;
+}
+
+.open-roles__intro {
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--text-color);
+  max-width: 460px;
+  margin: 0;
+}
+
+/* --- department filter chips --- */
+
+.open-roles__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.open-roles__filter {
+  font-family: var(--title-font);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--title-color);
+  background: #fff;
+  border: 1px solid #e3e0d8;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.open-roles__filter:hover {
+  border-color: var(--theme-color);
+  color: var(--secondary-color);
+}
+
+.open-roles__filter.is-active {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+.open-roles__filter span {
+  opacity: 0.6;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+/* --- two column layout --- */
+
+.roles-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.roles-list {
+  border: 1px solid #e9e6de;
+  padding: 18px 20px 20px;
+  background: #fff;
+}
+
+.roles-list__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 2px 16px;
+  border-bottom: 1px solid #f0ede6;
+  margin-bottom: 16px;
+}
+
+.roles-list__count {
+  font-family: var(--title-font);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.roles-list__sort {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.roles-list__sort select {
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--title-color);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* --- job card --- */
+
+.role-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #f0ede6;
+  border-left: 3px solid transparent;
+  padding: 20px 20px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: all 200ms ease;
+}
+
+.role-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.role-card:hover {
+  background: #fcfaf4;
+  border-color: rgba(201, 162, 39, 0.45);
+}
+
+.role-card.is-active {
+  background: #fbf8ef;
+  border-color: rgba(201, 162, 39, 0.45);
+  border-left-color: var(--theme-color);
+}
+
+.role-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.role-card__title {
+  font-family: var(--title-font);
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 0 0 10px;
+}
+
+.role-card__summary {
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--text-color);
+  margin: 0 0 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.role-card__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.role-card__deadline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: #b4451f;
+}
+
+.role-card__deadline img {
+  width: 14px;
+  height: 14px;
+}
+
+.role-card__posted {
+  color: #a5a29b;
+}
+
+/* --- badges --- */
+
+.role-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.role-badge {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #6b5a24;
+  background: #f7f1de;
+  padding: 5px 10px;
+}
+
+.role-badge--dept {
+  background: var(--secondary-color);
+  color: var(--theme-color);
+}
+
+.role-badge--dot {
+  background: transparent;
+  color: var(--text-color);
+  padding: 5px 0;
+  text-transform: none;
+  font-size: 12px;
+}
+
+/* --- pagination --- */
+
+.roles-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #f0ede6;
+}
+
+.roles-pagination button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #e3e0d8;
+  background: #fff;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+}
+
+.roles-pagination button:hover:not(:disabled) {
+  border-color: var(--theme-color);
+}
+
+.roles-pagination button.is-active {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+.roles-pagination button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* --- detail panel --- */
+
+.roles-detail {
+  position: sticky;
+  top: 130px;
+  border: 1px solid #e9e6de;
+  background: #fff;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.roles-detail__close {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 5;
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.roles-detail__inner {
+  padding: 46px 42px 48px;
+}
+
+.roles-detail__title {
+  font-family: var(--title-font);
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 0 0 14px;
+  padding-right: 34px;
+}
+
+.roles-detail__section {
+  margin-top: 28px;
+}
+
+.roles-detail__section h5 {
+  font-family: var(--title-font);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 0 0 8px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.roles-detail__section h5::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 3px;
+  height: 6px;
+  background: var(--theme-color);
+}
+
+.roles-detail__section h5::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  width: 12px;
+  height: 6px;
+  background: var(--theme-color);
+}
+
+.roles-detail__section p {
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.roles-detail__section ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.roles-detail__section ul li {
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.roles-detail__section ul li::marker {
+  color: var(--theme-color);
+}
+
+.roles-detail__meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #f0ede6;
+}
+
+.roles-detail__meta span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #a5a29b;
+  margin-bottom: 4px;
+}
+
+.roles-detail__meta strong {
+  font-family: var(--title-font);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.roles-detail__meta strong.is-deadline {
+  color: #b4451f;
+}
+
+.roles-detail__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Apply keeps the shared .theme-btn look. "Read More" is a plain outline button
+ * on its own class: .theme-btn sets `color: #fff !important`, so an outline
+ * variant built on it would render white text on a transparent background. */
+.roles-detail__actions .theme-btn {
+  flex: 1;
+  min-width: 190px;
+  padding: 15px 24px;
+  font-size: 16px;
+}
+
+.roles-detail__readmore {
+  flex: 0 0 auto;
+  display: inline-block;
+  padding: 15px 28px;
+  font-family: var(--title-font);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  background: transparent;
+  border: 1px solid #ddd9cf;
+  cursor: pointer;
+  text-align: center;
+  transition: all 200ms ease;
+}
+
+.roles-detail__readmore:hover {
+  border-color: var(--secondary-color);
+  background: #fbf9f3;
+}
+
+/* --- empty state --- */
+
+.roles-empty {
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.roles-empty__icon {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: #fbf8ef;
+  border: 1px solid rgba(201, 162, 39, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roles-empty__icon img {
+  width: 38px;
+  height: 38px;
+}
+
+.roles-empty h4 {
+  font-family: var(--title-font);
+  font-size: 22px;
+  color: var(--title-color);
+  margin: 0 0 8px;
+}
+
+.roles-empty p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--text-color);
+  margin: 0 auto 24px;
+  max-width: 380px;
+}
+
+.roles-empty .theme-btn {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+/* ============================================================
+   3. TYPOGRAPHY - justified body copy
+   Applied to running prose only. Headings, buttons, chips, badges and
+   metadata stay left-aligned: justifying short UI strings stretches the
+   gaps badly. `hyphens: auto` + `text-wrap: pretty` keep the justified
+   edges even by letting the engine break words instead of opening rivers.
+   ============================================================ */
+
+.why-join__item p,
+.open-roles__intro,
+.role-card__summary,
+.roles-detail__section p,
+.roles-detail__section ul li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-wrap: pretty;
+}
+
+/* The role-card summary is a 2-line clamp; without a slightly looser
+   leading the justified lines collide with the clamp edge. */
+.role-card__summary {
+  line-height: 23px;
+}
+
+/* ============================================================
+   4. RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1199px) {
+  .why-join__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 46px 30px;
+  }
+
+  .roles-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .roles-detail {
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-height: none;
+    border: none;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+    overflow-y: auto;
+  }
+
+  .roles-detail.is-drawer-open {
+    transform: translateX(0);
+  }
+
+  .roles-detail__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .roles-detail__inner {
+    padding: 34px 26px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-join,
+  .open-roles {
+    padding: 70px 0;
+  }
+
+  .why-join .sec-title h2,
+  .open-roles__head-row .sec-title h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .why-join__grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .roles-list {
+    padding: 16px 14px 18px;
+  }
+
+  .role-card {
+    padding: 16px 14px;
+  }
+
+  .role-card__title {
+    font-size: 16px;
+  }
+
+  .roles-detail__title {
+    font-size: 23px;
+  }
+
+  .roles-detail__meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .roles-detail__actions {
+    flex-direction: column;
+  }
+
+  .roles-detail__actions .theme-btn,
+  .roles-detail__readmore {
+    width: 100%;
+  }
+}

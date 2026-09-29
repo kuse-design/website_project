@@ -1677,23 +1677,6 @@ export default function HomePage() {
                       </div>
                     </div>
                   </li>
-                  <li className="accordion block">
-                    <div className="acc-btn">
-                      <div className="icon-box">
-                        <i className="flaticon-chevron"></i>
-                      </div>
-                      <h4>
-                        <span>08</span>How do I apply for a loan?
-                      </h4>
-                    </div>
-                    <div className="acc-content">
-                      <div className="content">
-                        <p>
-                          To apply for a loan, log in to the relevant Kaizen MFB digital platform or visit any of our branches. Choose your preferred loan product, complete the application form, provide the required information, and submit your application. Your application will be reviewed based on the applicable eligibility and credit assessment criteria.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>

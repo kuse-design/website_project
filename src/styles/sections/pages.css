@@ -1233,6 +1233,10 @@
 
 .card-details .content-section .text-box p{
   margin-bottom: 19px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .card-details .content-section .image-box .row{
