@@ -1672,7 +1672,11 @@
 .calculator-section .tab-btns .tab-btn h4{
   display: block;
   width: 100%;
-  font-size: clamp(14px, 1.3vw, 20px);
+  /* Floor raised 14px -> 18px: 1.3vw falls under 14px on phones, which pinned
+   * the loan-type labels to their smallest size exactly where the buttons stack
+   * full-width (<=499px). 1.3vw still reaches the 20px cap at 1538px, so
+   * desktop rendering is unchanged. */
+  font-size: clamp(18px, 1.3vw, 20px);
   line-height: 1.4;
   color: #fff;
   opacity: 0.5;
