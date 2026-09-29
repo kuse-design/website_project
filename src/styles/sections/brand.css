@@ -10,6 +10,31 @@
   width: auto;
 }
 
+/* Mobile top bar: responsive.css forces .header-lower to a solid white
+ * background at <=1200px, but the wordmark shipped for the dark desktop
+ * header is light gold, so it washes out against white. Swap in the dark
+ * gold variant for the mobile bar only. Desktop / sticky header / footer
+ * / drawer keep the light mark because those sit on dark backgrounds.
+ */
+@media only screen and (max-width: 1200px){
+  .main-header .header-lower .logo-box .logo a{
+    display: block;
+    width: 149px;
+    height: 40px;
+    background-image: url(/assets/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  /* Leave the original <img> in place (intrinsic sizing + a11y tree) and just
+   * make it transparent; the dark variant paints behind it.
+   */
+  .main-header .header-lower .logo-box .logo a img{
+    opacity: 0;
+  }
+}
+
 
 
 
