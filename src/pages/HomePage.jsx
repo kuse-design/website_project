@@ -6,6 +6,10 @@ import NiceSelect from "../components/ui/NiceSelect";
 import LoanCalculator from "../components/sections/LoanCalculator";
 import CardMarquee from "../components/ui/CardMarquee";
 
+// Public assets are served from the site root; spaces must be percent-encoded.
+const FD_RATE_CARD_FILE =
+  "/Documents/KAIZEN%20MFB%20UPDATED%20FIXED%20DEPOSIT%20RATE%20CARD.pdf";
+
 export default function HomePage() {
   return (
     <>
@@ -291,10 +295,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposit Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -366,10 +374,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
@@ -450,10 +462,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
@@ -534,10 +550,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
@@ -618,10 +638,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
@@ -702,10 +726,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
@@ -786,10 +814,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
@@ -870,10 +902,14 @@ export default function HomePage() {
                             <h4>
                               Fixed Deposits Rate Guide
                             </h4>
-                            <h6>pdf 6.8mb</h6>
-                            <button type="button" className="theme-btn">
+                            <h6>pdf 222kb</h6>
+                            <a
+                              className="theme-btn"
+                              href={FD_RATE_CARD_FILE}
+                              download
+                            >
                               <span>Download</span>
-                            </button>
+                            </a>
                           </div>
                         </div>
                         <div className="lower-text">
