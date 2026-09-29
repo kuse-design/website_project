@@ -4,6 +4,7 @@ import Carousel from "../components/ui/Carousel";
 import Tabs from "../components/ui/Tabs";
 import NiceSelect from "../components/ui/NiceSelect";
 import LoanCalculator from "../components/sections/LoanCalculator";
+import CardMarquee from "../components/ui/CardMarquee";
 
 export default function HomePage() {
   return (
@@ -1122,38 +1123,12 @@ export default function HomePage() {
             Secure
           </span>
           <div className="auto-container">
-            <div className="row clearfix">
-              <div className="col-lg-6 col-md-12 col-sm-12 card-column">
-                <div className="card-inner">
-                  <div
-                    className="shape"
-                    style={{
-                      backgroundImage: "url(/assets/images/shape/shape-3.webp)",
-                    }}
-                  ></div>
-                  <figure className="card-box">
-                    <img
-                      loading="lazy"
-                      src="/assets/images/icons/card-1.png"
-                      alt=""
-                      className="floating-card"
-                    />
-                  </figure>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12 content-column">
-                <div className="content-box">
-                  <div className="sec-title light">
-                    <span className="sub-title">Debit Cards</span>
-                    <h2>
-                      Discover Our <br />
-                      Range of Debit Cards
-                    </h2>
-                  </div>
-                </div>
-              </div>
+            <div className="sec-title centred light">
+              <span className="sub-title">Debit Cards</span>
+              <h2>Discover Our Range of Debit Cards</h2>
             </div>
           </div>
+          <CardMarquee />
         </section>
 
         <section className="partners-section sec-pad">
