@@ -3,12 +3,17 @@ import PageTitle from '../components/sections/PageTitle'
 import Tabs from '../components/ui/Tabs'
 import './ContactPage.css'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+// Relative on purpose. In development Vite proxies /api to the Express server
+// (see vite.config.js); in production Vercel serves /api/contact from the same
+// hostname as the site. One relative URL covers both, so there is no API host
+// to configure and no cross-origin preflight that can fail.
+const CONTACT_ENDPOINT = '/api/contact'
 
 export default function ContactPage(){
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [fieldErrors, setFieldErrors] = useState({})
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,38 +31,48 @@ export default function ContactPage(){
     e.preventDefault()
     setLoading(true)
     setError('')
+    setFieldErrors({})
+
+    // Captured before the first await: React clears currentTarget once the
+    // event dispatch finishes, so holding `e` and reading it later gives null.
+    const formEl = e.currentTarget
 
     try {
-      const res = await fetch(`${API_URL}/api/contact`, {
+      // Read the form element rather than the controlled state so the
+      // honeypot field is included in the payload without living in state.
+      const payload = Object.fromEntries(new FormData(formEl).entries())
+
+      const res = await fetch(CONTACT_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(payload)
       })
-      
-      // Check if response is ok before parsing JSON
+
       if (!res.ok) {
-        const text = await res.text()
         let errorMsg = `Server error: ${res.status}`
+        let fields = {}
         try {
-          const data = JSON.parse(text)
+          const data = await res.json()
           errorMsg = data.error || errorMsg
+          fields = data.fields || {}
         } catch {
-          errorMsg = text || errorMsg
+          /* response was not JSON; keep the status-based message */
         }
+        setFieldErrors(fields)
         throw new Error(errorMsg)
       }
-      
-      const text = await res.text()
-      if (!text) {
-        throw new Error('Empty response from server')
-      }
-      
-      const data = JSON.parse(text)
+
       setSubmitted(true)
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
     } catch (err) {
-      console.error('Contact form error:', err)
-      setError(err.message || 'Failed to send message. Please try again.')
+      // A TypeError here means the request never reached the server: the API is
+      // not running, or a proxy is in the way. "Failed to fetch" on its own is
+      // the browser's message and tells a visitor nothing useful.
+      if (err instanceof TypeError) {
+        setError('We could not reach the server. Please try again in a moment, or email info@kaizenmfb.com.')
+      } else {
+        setError(err.message || 'Failed to send message. Please try again.')
+      }
     } finally {
       setLoading(false)
     }
@@ -171,6 +186,12 @@ export default function ContactPage(){
                     <div className="form-status error">{error}</div>
                   )}
                   <form id="get-in-touch-form" onSubmit={handleSubmit} noValidate>
+                    {/* Honeypot. Hidden from people and from assistive tech; the
+                        server treats any value here as a bot and drops it. */}
+                    <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: 'auto' }}>
+                      <label htmlFor="company_website">Company website</label>
+                      <input type="text" id="company_website" name="company_website" tabIndex={-1} autoComplete="off" />
+                    </div>
                     <div className="row clearfix">
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="form-group">

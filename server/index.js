@@ -1,104 +1,92 @@
+// Evaluated before ./contact.js, which reads its configuration at module scope.
+import 'dotenv/config'
+
 import express from 'express'
 import cors from 'cors'
-import nodemailer from 'nodemailer'
-import dotenv from 'dotenv'
+import { existsSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
 
-dotenv.config()
+import { contactRoute } from './contact.js'
+import { isConfigured } from './mailer.js'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const ROOT = join(__dirname, '..')
+const DIST = join(ROOT, 'dist')
 
 const app = express()
-const PORT = process.env.PORT || 3001
+const PORT = Number(process.env.PORT) || 3001
 
-// Allow both Vite default (5173) and configured port (3000)
-const allowedOrigins = [
-  'http://localhost:5173',
-  'http://localhost:3000',
-  process.env.VITE_API_URL
-].filter(Boolean)
+/**
+ * The API is same-origin on Vercel, so CORS is only relevant when this server
+ * is fronted by a separately-hosted frontend. It is therefore opt-in: with no
+ * ALLOWED_ORIGINS set, cross-origin browser calls are refused rather than
+ * silently allowed.
+ */
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || '')
+  .split(',')
+  .map((value) => value.trim())
+  .filter(Boolean)
 
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true
-}))
-app.use(express.json())
+app.use(
+  cors({
+    origin(origin, callback) {
+      // Same-origin and non-browser callers (curl, health checks, tests) send
+      // no Origin header and are always allowed.
+      if (!origin) return callback(null, true)
+      if (allowedOrigins.length === 0) return callback(null, false)
+      callback(null, allowedOrigins.includes(origin))
+    },
+    credentials: true,
+  })
+)
 
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  secure: process.env.SMTP_SECURE === 'true',
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS
-  }
+app.use(express.json({ limit: '32kb' }))
+
+// Bound for every method, not just POST, so handleContact's own method guard
+// answers a wrong verb with 405 instead of letting it fall through to the SPA
+// catch-all below and returning index.html with a 200.
+app.all('/api/contact', contactRoute)
+
+app.all('/api/health', (_req, res) => {
+  res.json({ status: 'ok', mailConfigured: isConfigured() })
 })
 
-transporter.verify((err) => {
-  if (err) {
-    console.error('SMTP connection failed:', err.message)
-  } else {
-    console.log('SMTP server ready')
-  }
+// Anything under /api is an endpoint, never a page. Responding 404 here keeps a
+// mistyped API path from being answered with the SPA shell.
+app.all(/^\/api(\/|$)/, (_req, res) => {
+  res.status(404).json({ error: 'Not found' })
 })
 
-app.post('/api/contact', async (req, res) => {
-  console.log('Contact form submission received:', req.body)
-  
-  const { name, email, phone, subject, message } = req.body
+// Serve the production build when it exists, so a single Node process can host
+// the whole site. This makes the self-host path identical to Vercel: one origin,
+// no CORS, no second process to forget to start.
+if (existsSync(DIST)) {
+  app.use(express.static(DIST, { index: false, maxAge: '1h' }))
+  app.get('*', (_req, res) => res.sendFile(join(DIST, 'index.html')))
+} else {
+  app.get('/', (_req, res) =>
+    res
+      .status(200)
+      .type('text/plain')
+      .send('API is running. Run `npm run build` to serve the site from this process.')
+  )
+}
 
-  if (!name || !email || !phone || !message) {
-    console.log('Validation failed: missing fields')
-    return res.status(400).json({ error: 'Missing required fields' })
+app.use((err, _req, res, _next) => {
+  if (err?.type === 'entity.too.large') {
+    return res.status(413).json({ error: 'Message is too large.' })
   }
-
-  const mailOptions = {
-    from: `"Kaizen MFB Contact" <${process.env.SMTP_USER}>`,
-    to: process.env.CONTACT_EMAIL,
-    replyTo: email,
-    subject: subject || `New Contact Form: ${name}`,
-    html: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #c9a227;">New Contact Form Submission</h2>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Name:</strong></td>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;">${name}</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Email:</strong></td>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;">${email}</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Phone:</strong></td>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;">${phone}</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Subject:</strong></td>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;">${subject || 'N/A'}</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;"><strong>Message:</strong></td>
-            <td style="padding: 10px; border-bottom: 1px solid #eee;">${message.replace(/\n/g, '<br>')}</td>
-          </tr>
-        </table>
-      </div>
-    `
-  }
-
-  try {
-    await transporter.sendMail(mailOptions)
-    console.log('Email sent successfully')
-    res.json({ success: true, message: 'Message sent successfully' })
-  } catch (err) {
-    console.error('Email send failed:', err)
-    res.status(500).json({ error: 'Failed to send message. Please try again later.' })
-  }
+  console.error('[server] unhandled error:', err)
+  res.status(500).json({ error: 'Something went wrong. Please try again.' })
 })
 
-// Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok' })
-})
+if (!isConfigured()) {
+  console.warn('[server] SMTP not configured - /api/contact will return 503 until SMTP_* and CONTACT_EMAIL are set.')
+}
 
 app.listen(PORT, () => {
-  console.log(`Contact API server running on http://localhost:${PORT}`)
-  console.log(`Allowed origins:`, allowedOrigins)
+  console.log(`Contact API listening on http://localhost:${PORT}`)
+  console.log(allowedOrigins.length ? `CORS origins: ${allowedOrigins.join(', ')}` : 'CORS: same-origin only')
+  console.log(`Mail configured: ${isConfigured()}`)
 })
