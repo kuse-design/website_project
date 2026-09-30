@@ -2,6 +2,7 @@ import React from 'react'
 import PageTitle from '../components/sections/PageTitle'
 import { Link } from 'react-router-dom'
 import Carousel from '../components/ui/Carousel'
+import './AboutUsPage.css'
 
 export default function AboutUsPage(){
   return (
@@ -118,7 +119,7 @@ export default function AboutUsPage(){
                     </div>
                     <div className="text-box">
                       <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-199.png" alt="" /></div>
-                      <p>To transform lives by providing tailored financial services, leveraging technology, and fostering continuous improvement while empowering individuals, entrepreneurs, and small businesses through ethical banking practices.</p>
+                      <p>To transform lives by pro&shy;viding tailored financial services, lever&shy;aging technology, and fostering conti&shy;nuous improve&shy;ment while em&shy;power&shy;ing indi&shy;viduals, entre&shy;pre&shy;neurs, and small busi&shy;nesses through ethical banking practices.</p>
                     </div>
                   </div>
                 </div>
@@ -150,7 +151,7 @@ export default function AboutUsPage(){
                     </div>
                     <div className="text-box">
                       <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-200.png" alt="" /></div>
-                      <p>To be the leading microfinance institution driving financial inclusion and economic empowerment through innovative, accessible, and sustainable banking solutions.</p>
+                      <p>To be the leading micro&shy;fi&shy;nance insti&shy;tu&shy;tion driving financial inclu&shy;sion and economic em&shy;power&shy;ment through in&shy;nova&shy;tive, acces&shy;sible, and sus&shy;tain&shy;able banking solutions.</p>
                     </div>
                   </div>
                 </div>
@@ -220,28 +221,28 @@ export default function AboutUsPage(){
                     <div className="inner-box">
                       <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-203.png" alt="" /></div>
                       <h3>Community <br />Empowerment</h3>
-                      <p>We are not just a bank; we are a catalyst for positive change, working to reduce poverty and create opportunities for financial independence.</p>
+                      <p>We are not just a bank; we are a catalyst for positive change, working to reduce poverty and create op&shy;por&shy;tun&shy;ities for financial independence.</p>
                     </div>
                   </div>
                   <div className="chooseus-block-one">
                     <div className="inner-box">
                       <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-204.png" alt="" /></div>
                       <h3>Innovative Financial <br />Solutions</h3>
-                      <p>Fostering sustainable growth and financial inclusion by providing accessible, reliable, and customer-focused banking services.</p>
+                      <p>Fostering sus&shy;tain&shy;able growth and financial inclu&shy;sion by pro&shy;viding acces&shy;sible, reliable, and customer-focused banking services.</p>
                     </div>
                   </div>
                   <div className="chooseus-block-one">
                     <div className="inner-box">
                       <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-205.png" alt="" /></div>
                       <h3>Accessible <br />Banking</h3>
-                      <p>Affordable and accessible financial products for individuals, micro-entrepreneurs, and small businesses.</p>
+                      <p>Affordable and acces&shy;sible financial products for indi&shy;viduals, micro-entrepreneurs, and small busi&shy;nesses.</p>
                     </div>
                   </div>
                   <div className="chooseus-block-one">
                     <div className="inner-box">
                       <div className="icon-box"><img loading="lazy" src="/assets/images/icons/icon-206.png" alt="" /></div>
                       <h3>Expert Financial <br />Guidance</h3>
-                      <p>Our dedicated team of professionals is always ready to assist, providing guidance and support whenever needed.</p>
+                      <p>Our ded&shy;i&shy;cated team of pro&shy;fes&shy;sion&shy;als is always ready to assist, pro&shy;viding guid&shy;ance and sup&shy;port whenever needed.</p>
                     </div>
                   </div>
                 </div>

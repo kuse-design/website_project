@@ -1,6 +1,7 @@
 import React from 'react'
 import PageTitle from '../components/sections/PageTitle'
 import { Link } from 'react-router-dom'
+import './BlogPostDetailsPage.css'
 
 export default function BlogPostDetailsPage(){
   return (

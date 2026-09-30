@@ -151,7 +151,11 @@
 
 .main-footer .contact-widget .support-box .link-box a{
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   font-size: 24px;
   color: #ffffff;
 }

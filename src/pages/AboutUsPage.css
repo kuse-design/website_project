@@ -1,0 +1,151 @@
+/**
+ * Imported by AboutUsPage.jsx only.
+ *
+ * Lives apart from styles/sections/about.css so the mobile rules here cannot
+ * leak into other pages — `funfact-section`, for instance, is shared with the
+ * home page, while the sections targeted below are exclusive to About Us.
+ */
+
+/* =====================================================================
+   Justified prose
+   =====================================================================
+   The About page is editorial copy rather than UI chrome, so its body text is
+   set justified at every width, phones included.
+
+   Hyphenation is what makes narrow justification hold together. Without it the
+   browser evens each line by stretching the spaces it has, and at a 40-character
+   measure two or three enormous gaps appear per line. `hyphens: auto` lets the
+   line break inside a word instead, so the spaces stay close to their natural
+   width. Line-height is opened up on phones for the same reason: justified
+   lines sit further apart visually than ragged ones and need the extra leading
+   to stay readable.
+
+   Headings, sub-titles, buttons, list labels and the statistic counters are
+   deliberately excluded — they are short, and justifying short text only
+   produces uneven lines for no benefit.
+*/
+
+.about-kaizen-section .text-content p,
+.statements-block-one .inner-box .text-box p,
+.chooseus-block-one .inner-box p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* The mission/vision cards sit in a narrow col-lg-4, so the 30px card padding
+   left only ~310px of text — around 35 characters. Justified at that measure
+   the odd three-word line stretches into a visible gap, so give the space back
+   to the prose and set it at the same 16px as the rest of the page's copy. */
+.statements-block-one .inner-box .text-box {
+  padding: 36px 22px 30px 22px;
+}
+
+.statements-block-one .inner-box .text-box p {
+  font-size: 16px;
+}
+
+/* =====================================================================
+   Phone: "Why Choose Us" blocks
+   =====================================================================
+   On desktop each block indents 90px to clear a 60px icon sitting in the
+   left gutter. Kept on a phone that indent leaves the copy only ~240px wide
+   (about 28 characters), which is well under a comfortable measure and forces
+   aggressive hyphenation. Stacking the icon above the text hands the full
+   column width back to the prose.
+*/
+
+@media only screen and (max-width: 767px) {
+  .chooseus-section .chooseus-block-one .inner-box {
+    padding-left: 0;
+    margin-bottom: 28px;
+  }
+
+  .chooseus-section .chooseus-block-one:last-child .inner-box {
+    margin-bottom: 0;
+  }
+
+  .chooseus-section .chooseus-block-one .inner-box .icon-box {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 14px;
+  }
+
+  .chooseus-section .chooseus-block-one .inner-box .icon-box img {
+    max-width: 100%;
+  }
+
+  .chooseus-section .chooseus-block-one .inner-box h3 {
+    margin-bottom: 12px;
+  }
+
+  /* The other two prose blocks on this page step down to 16px on a phone; this
+     one was still rendering at the desktop 17px, which both looked inconsistent
+     and squeezed the measure to about 32 characters at 320px. */
+  .chooseus-section .chooseus-block-one .inner-box p {
+    font-size: 16px;
+  }
+
+  /* The headings carry hard <br /> breaks for the desktop column width; on a
+     phone they can introduce awkward short lines, so let them wrap naturally. */
+  .chooseus-section .chooseus-block-one .inner-box h3 br {
+    display: none;
+  }
+}
+
+/* =====================================================================
+   Phone: leading for justified text
+   =====================================================================*/
+
+@media only screen and (max-width: 767px) {
+  .about-kaizen-section .text-content p,
+  .statements-block-one .inner-box .text-box p,
+  .chooseus-block-one .inner-box p {
+    line-height: 1.8;
+  }
+}
+
+/* =====================================================================
+   Phone: mission / vision cards
+   =====================================================================
+   The image and the overlaid heading sit above the paragraph. With the image
+   frame no longer needed as a 3:4 crop on a narrow column, letting it breathe
+   keeps the card from feeling cramped.
+*/
+
+@media only screen and (max-width: 575px) {
+  .statements-section .statements-block-one .inner-box {
+    margin-bottom: 32px;
+  }
+
+  .statements-section .statements-block-one .inner-box .image-box {
+    margin-bottom: 28px;
+  }
+
+  .statements-section .statements-block-one .inner-box .image-box .image img {
+    border-radius: 8px;
+  }
+
+  /* The 30px side padding is worth 60px of a 330px phone column. Spending it on
+     the text rather than the gutter lifts the measure from roughly 30 to 36
+     characters, which is the difference between an acceptable line and one that
+     stretches a single space to six characters wide. */
+  .statements-section .statements-block-one .inner-box .text-box {
+    padding: 26px 16px 24px 16px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .statements-section .statements-block-one .inner-box .text-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  .statements-section .statements-block-one .inner-box .text-box p:last-child {
+    margin-bottom: 0;
+  }
+}

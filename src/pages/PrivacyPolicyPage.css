@@ -95,3 +95,23 @@
     padding: 40px 26px;
   }
 }
+
+/**
+ * Justified setting for genuine long-form legal prose.
+ *
+ * Restricted to tablet and wider on purpose. At phone width the measure is
+ * roughly 35-40 characters, and justifying there opens rivers of white space
+ * between words that are far worse than a ragged right edge. Hyphenation is
+ * enabled so the spacing stays even instead of stretching a handful of gaps.
+ *
+ * Headings, lists and the highlighted callout blocks stay left-aligned —
+ * justifying a list or a short block produces uneven lines for no benefit.
+ */
+@media (min-width: 768px) {
+  .privacy-section .privacy-policy-card p,
+  .privacy-section .privacy-policy-card .legal-block p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}

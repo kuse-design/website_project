@@ -604,7 +604,9 @@
 }
 
 .support-section .table-outer {
-  min-width: 1150px;
+  /* Was min-width:1150px, which exceeded the widest .auto-container (1070px)
+     and so forced a sideways scroll on every viewport, desktop included. */
+  min-width: 0;
   width: 100%;
 }
 
@@ -696,6 +698,59 @@
   display: inline-block;
   color: var(--theme-color);
   text-decoration: underline;
+}
+
+/**
+ * Small screens: the table-outer carries a 1150px min-width, which on a phone
+ * leaves a 270px-wide box that can only be read by dragging sideways with no
+ * visual hint. Each row becomes a self-contained card instead — the service
+ * name heads the card and the contact details sit beneath it, so the column
+ * headers become redundant and are dropped.
+ */
+@media only screen and (max-width: 767px) {
+  .support-section .table-outer thead{
+    display: none;
+  }
+  .support-section .table-outer table,
+  .support-section .table-outer tbody,
+  .support-section .table-outer tr,
+  .support-section .table-outer td{
+    display: block;
+    width: 100%;
+  }
+  .support-section .table-outer tbody tr{
+    padding: 4px 0px;
+    border-bottom: 1px solid #e6e4e4;
+  }
+  .support-section .table-outer tbody tr:last-child{
+    border-bottom: none;
+  }
+  .support-section .table-outer tbody td{
+    border-right: none;
+    border-bottom: none;
+    padding: 0px;
+  }
+  .support-section .table-outer tbody td h5{
+    font-size: 17px;
+    line-height: 24px;
+    padding: 16px 20px 4px;
+  }
+  .support-section .table-outer tbody td span{
+    font-size: 15px;
+    line-height: 24px;
+    padding: 6px 20px;
+  }
+  /* phone numbers and emails are the whole point of this page, so they get a
+     full-height tap target rather than 20px of inline text. */
+  .support-section .table-outer tbody td span a{
+    display: block;
+    padding: 8px 0px;
+  }
+  /* Recover the width the desktop 40px cell padding gives away. */
+  .contact-section .tabs-content{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 .banking-service .content-box .inner-box .list-style-one li{

@@ -197,12 +197,15 @@
 
 .roles-list__sort select {
   font-family: inherit;
-  font-size: 13px;
+  /* iOS Safari zooms the viewport on focus for any form control under 16px,
+     leaving the user panned into a half-zoomed page. 16px is the floor. */
+  font-size: 16px;
   color: var(--title-color);
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  max-width: 100%;
 }
 
 /* --- job card --- */
