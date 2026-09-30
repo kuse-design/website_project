@@ -2,7 +2,8 @@ const departments = [
   { id: 'sales', name: 'Sales & Marketing' },
   { id: 'risk', name: 'Risk & Compliance' },
   { id: 'operations', name: 'Operations' },
-  { id: 'corporate', name: 'Corporate Affairs' }
+  { id: 'corporate', name: 'Corporate Affairs' },
+  { id: 'it', name: 'IT Department' }
 ]
 
 const jobOpenings = [
@@ -116,7 +117,7 @@ const jobOpenings = [
   },
   {
     id: 5,
-    title: 'Government Relations Manager',
+    title: 'Human Resources',
     dept: 'corporate',
     level: 'Management',
     type: 'Full Time',
@@ -125,21 +126,52 @@ const jobOpenings = [
     postedDate: '2026-09-02',
     deadline: '2026-10-15',
     jobPurpose:
-      'To strengthen the Bank’s institutional relationships with government bodies, regulators and industry stakeholders, supporting business development and safeguarding our licence to operate.',
+      'To build and support the Bank’s people practices by attracting, developing and retaining a talented team, and by ensuring our employment policies are fair, compliant and consistently applied across the organisation.',
     education:
-      "Bachelor's Degree in Law, Public Affairs, Business Administration, Political Science or a related discipline. A law qualification is strongly preferred.",
+      "Bachelor's Degree in Human Resource Management, Business Administration, Psychology or a related discipline. A professional qualification such as CIPD, SHRM or an HRCI certification is an added advantage.",
     responsibilities: [
-      'Map and manage relationships with regulators, ministries, agencies and industry bodies',
-      'Track and interpret regulatory developments that affect the Bank and advise management',
-      'Support licence applications, examinations and regulatory filings',
-      'Coordinate industry association membership and representation',
-      'Advise business units on policy, public sector lending and institutional partnerships',
-      'Manage the Bank’s position on industry matters, campaigns and stakeholder communications'
+      'Own recruitment end-to-end, from role definition and advertising through to offer and onboarding',
+      'Advise line managers on performance management, discipline and employee relations matters',
+      'Develop and maintain the Bank’s HR policies, procedures and staff handbook in line with labour law',
+      'Drive staff training, performance appraisal cycles and career development programmes',
+      'Administer compensation, benefits, leave and payroll inputs accurately and on schedule',
+      'Maintain complete, confidential and compliant employee records and HR systems',
+      'Support workforce planning, headcount budgets and organisational restructuring as required',
+      'Monitor staff wellbeing, engagement and compliance with the Bank’s code of conduct'
     ],
     experience:
-      '7+ years in government affairs, regulatory compliance, public policy or legal practice, ideally within banking or financial services. An existing regulatory network is highly valuable.',
+      '7+ years in human resources, ideally within banking or financial services. Experience in a regulated or unionised environment and hands-on employee relations casework is highly valuable.',
     skills:
-      'Stakeholder management, regulatory interpretation, policy analysis, written and verbal communication, discretion, negotiation, judgement.'
+      'Recruitment, employee relations, labour law compliance, performance management, compensation and benefits, policy development, discretion, communication, conflict resolution.'
+  },
+  {
+    id: 6,
+    title: 'Frontend Developer',
+    dept: 'it',
+    level: 'Officer',
+    type: 'Full Time',
+    workplaceType: 'Hybrid',
+    location: 'Ikeja, Lagos, Nigeria',
+    postedDate: '2026-09-28',
+    deadline: '2026-11-20',
+    jobPurpose:
+      'To build and maintain the customer-facing web experience of the Bank, turning product and design requirements into fast, accessible and reliable interfaces used by customers and staff.',
+    education:
+      "Bachelor's Degree in Computer Science, Software Engineering, Information Technology or a related discipline. A frontend certification is an added advantage.",
+    responsibilities: [
+      'Build responsive, accessible interfaces in React against Figma designs and product briefs',
+      'Write and maintain component libraries, shared design tokens and reusable UI patterns',
+      'Work with backend engineers to integrate REST APIs, authentication and form validation',
+      'Improve page performance, bundle size, Core Web Vitals and search visibility',
+      'Write automated tests and participate in code review to keep defects out of releases',
+      'Instrument user-facing flows so errors and performance can be monitored in production',
+      'Debug layout, browser and device issues across mobile and desktop',
+      'Contribute to frontend standards, documentation and developer onboarding'
+    ],
+    experience:
+      '3+ years building production web applications. Strong command of JavaScript and React, modern CSS and responsive design. Experience with a build tool such as Vite and a version-controlled Git workflow is expected.',
+    skills:
+      'JavaScript (ES2022+), React, modern CSS, responsive and mobile-first design, accessibility (WCAG), Git, REST APIs, build tooling, debugging, attention to detail.'
   }
 ]
 

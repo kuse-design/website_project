@@ -297,6 +297,9 @@ export default function CareersPage() {
                 </button>
                 {departments.map((dept) => {
                   const count = jobOpenings.filter((j) => j.dept === dept.id).length
+                  // A department with no live vacancy would render a filter that
+                  // always lands on the empty state, so it is left out entirely.
+                  if (count === 0) return null
                   return (
                     <button
                       type="button"

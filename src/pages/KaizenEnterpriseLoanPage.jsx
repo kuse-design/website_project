@@ -13,7 +13,7 @@ const features = [
   'For registered Organizations',
   'No Equity Contribution required',
   'Tenor: 30 – 365 days',
-  'Interest rate: 6% flat',
+  'Interest rate: 3.5% flat',
   'Direct debit mandate',
   'Upfront fees: 4%'
 ]
