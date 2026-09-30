@@ -358,8 +358,15 @@
   background: -webkit-linear-gradient(-90deg, rgba(30,36,42,0.0) 25%, rgba(30,36,42,1) 100%);
 }
 
+/* The <picture> wrapper is inline by default, which would leave a descender
+   gap under the image and break the gradient overlay's height:100%. */
+.statements-block-one .inner-box .image-box .image picture{
+  display: block;
+}
+
 .statements-block-one .inner-box .image-box .image img{
   width: 100%;
+  height: auto;
 }
 
 .statements-block-one .inner-box .image-box h3{

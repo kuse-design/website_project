@@ -26,7 +26,7 @@ const LOAN_TYPES = [
   {
     id: 'asset',
     label: 'Asset Loan',
-    amount: { min: 25000000, max: 500000000, default: 50000000, labels: ['₦25 Million', '₦500 Million'] },
+    amount: { min: 50000, max: 50000000, default: 5000000, labels: ['₦50,000', '₦50 Million'] },
     term: { min: 1, max: 12, default: 12, labels: ['1 Month', '12 Months'] },
     rate: { value: '3.5%' }
   },
@@ -67,7 +67,7 @@ const calculateResults = (principal, annualRatePercent, months) => {
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
-/** Step size that keeps huge ranges (e.g. ₦25M–₦500M) smooth to drag. */
+/** Step size that keeps huge ranges (e.g. ₦50,000–₦5M) smooth to drag. */
 const adaptiveStep = (min, max) => {
   const raw = (max - min) / 200
   if (!(raw > 0)) return 1

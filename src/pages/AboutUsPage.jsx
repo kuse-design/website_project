@@ -108,7 +108,12 @@ export default function AboutUsPage(){
                 <div className="statements-block-one">
                   <div className="inner-box">
                     <div className="image-box">
-                      <figure className="image"><img loading="lazy" src="/assets/images/banner/ourmission.jpg" alt="Our Mission" /></figure>
+                      <figure className="image">
+                        <picture>
+                          <source srcSet="/assets/images/banner/ourmission.avif" type="image/avif" />
+                          <img loading="lazy" src="/assets/images/banner/ourmission.jpg" alt="Our Mission" width="1377" height="768" />
+                        </picture>
+                      </figure>
                       <h3>Our Mission</h3>
                     </div>
                     <div className="text-box">
