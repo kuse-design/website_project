@@ -1770,6 +1770,45 @@
 }
 
 
+/** mobile fixed-navbar offset (keep last - overrides the <=1200px rule) **/
+
+/* Below 1200px the navbar (.main-header .header-lower) becomes
+ * position:fixed, and the 85px .boxed_wrapper padding-top in the <=1200px
+ * block above is what stops page content sliding underneath it.
+ *
+ * .boxed_wrapper is rendered twice - once in Layout.jsx around the whole app,
+ * and again by each page inside <main id="main-content"> - so that rule
+ * matched both wrappers and the offset stacked: 85 + 85 = 170px, leaving a
+ * blank cream band under a navbar only 70px tall.
+ *
+ * The offset is applied to the outermost wrapper alone and sized to the
+ * navbar's real height, so the gap closes to 0 with no overlap. Tablet
+ * (768-1200px) and desktop (>1200px, where the header is position:static)
+ * are deliberately untouched.
+ */
+@media only screen and (max-width: 767px){
+
+  #root > .boxed_wrapper{
+    padding-top: 86px;
+  }
+
+  #main-content > .boxed_wrapper{
+    padding-top: 0;
+  }
+
+}
+
+/* Under 500px the navbar hides .menu-right-content (see the <=499px block
+ * above), shortening it from 86px to 70px. Match that exactly. */
+@media only screen and (max-width: 499px){
+
+  #root > .boxed_wrapper{
+    padding-top: 70px;
+  }
+
+}
+
+
 
 
 
